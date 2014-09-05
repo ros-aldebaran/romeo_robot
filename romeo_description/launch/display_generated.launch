@@ -1,0 +1,14 @@
+<!-- roslaunch file to start view an URDF model in rviz.
+      Adapted from urdf_tutorial/display.launch -->
+<launch>
+	<arg name="model" />
+	<arg name="gui" default="True" />
+<!--	<param name="robot_description" textfile="$(arg model)" /> -->
+  <param name="robot_description" command="$(find xacro)/xacro.py $(find romeo_description)/urdf/romeoV1_generated_urdf/romeorobot.xacro" /> 
+<!--  <param name="robot_description" textfile="$(find nao_description)/urdf/naoV40_generated_urdf/nao.urdf" /> -->
+
+	<param name="use_gui" value="$(arg gui)"/>
+	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" ></node>
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+	<node name="rviz" pkg="rviz" type="rviz" args="-f torso -d $(find romeo_description)/config/urdf.rviz" />
+</launch>
