@@ -50,7 +50,7 @@ dicoRomeoXacro= {
 
 dicoPepperXacro = {
 'head':'Head',
-'legs':'Tibia',
+'legs':'base_footprint',
 'arms':'wrist',
 'torso':'torso',
 
