@@ -7,6 +7,7 @@
 	<xacro:include filename="romeolegs.xacro"/>
 	<xacro:include filename="romeotorso.xacro"/>
 	<xacro:include filename="romeoarms.xacro"/>
+	<xacro:include filename="romeohands.xacro"/>
 	<xacro:include filename="romeosensors.xacro"/>
 	<xacro:include filename="romeovisual_collisions.xacro"/>
 </robot>
