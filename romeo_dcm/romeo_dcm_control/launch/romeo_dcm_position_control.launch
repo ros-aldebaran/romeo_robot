@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find romeo_dcm_control)/config/romeo_position_control.yaml" command="load"/>
+
+  <!-- load the controllers -->
+  <node name="romeo_controller" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="/romeo_dcm" args="/romeo_dcm/HeadYaw_position_controller /romeo_dcm/HeadPitch_position_controller /romeo_dcm/LShoulderPitch_position_controller /romeo_dcm/LElbowYaw_position_controller /romeo_dcm/LWristYaw_position_controller /romeo_dcm/LShoulderRoll_position_controller /romeo_dcm/LElbowRoll_position_controller /romeo_dcm/RShoulderPitch_position_controller /romeo_dcm/RElbowYaw_position_controller /romeo_dcm/RWristYaw_position_controller /romeo_dcm/RShoulderRoll_position_controller /romeo_dcm/RElbowRoll_position_controller /romeo_dcm/LHipYawPitch_position_controller /romeo_dcm/LHipRoll_position_controller /romeo_dcm/LHipPitch_position_controller /romeo_dcm/LKneePitch_position_controller /romeo_dcm/LAnklePitch_position_controller /romeo_dcm/LAnkleRoll_position_controller /romeo_dcm/RHipYawPitch_position_controller /romeo_dcm/RHipRoll_position_controller /romeo_dcm/RHipPitch_position_controller /romeo_dcm/RKneePitch_position_controller /romeo_dcm/RAnklePitch_position_controller /romeo_dcm/RAnkleRoll_position_controller /romeo_dcm/joint_state_controller"/>
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    respawn="false" output="screen">
+    <remap from="/joint_states" to="/romeo_dcm/joint_states" />
+  </node>
+
+</launch>
