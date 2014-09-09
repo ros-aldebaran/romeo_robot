@@ -48,9 +48,9 @@ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISE
 #include <sensor_msgs/JointState.h>
 
 #include <romeo_dcm_msgs/BoolService.h>
-#include <romeo_dcm_msgs/FSRs.h>
+/*#include <romeo_dcm_msgs/FSRs.h>
 #include <romeo_dcm_msgs/Bumper.h>
-#include <romeo_dcm_msgs/Tactile.h>
+#include <romeo_dcm_msgs/Tactile.h> */
 #include <std_msgs/Float32.h>
 
 #include <tf/transform_broadcaster.h>
