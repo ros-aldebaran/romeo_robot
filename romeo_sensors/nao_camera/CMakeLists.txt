@@ -29,7 +29,7 @@ find_package(NAOqi QUIET COMPONENTS
 catkin_python_setup()
 
 # This driver uses Boost threads
-find_package(Boost REQUIRED COMPONENTS thread program_options)
+find_package(Boost REQUIRED COMPONENTS thread filesystem)# program_options)
 
 # auto-generate dynamic reconfiguration GUI before catkin_package()
 generate_dynamic_reconfigure_options(cfg/NaoCamera.cfg)
