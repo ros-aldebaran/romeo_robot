@@ -10,7 +10,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 # Nothing that can be imported by other modules
-catkin_package()
+catkin_package(CATKIN_DEPENDS roscpp tf message_filter sensor_msgs)
 
 catkin_python_setup()
 
@@ -25,6 +25,3 @@ install(DIRECTORY config/
 # Instructions to install urdf files
 install(DIRECTORY urdf/
     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf)
-# Instructions to install meshes files
-install(DIRECTORY meshes/
-    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/meshes)
