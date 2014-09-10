@@ -2,6 +2,9 @@
 Changelog for package nao_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.0.2 (2014-09-10)
 ------------------
 * fix install target error

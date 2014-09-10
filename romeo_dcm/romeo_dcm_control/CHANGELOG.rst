@@ -2,6 +2,9 @@
 Changelog for package romeo_dcm_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.0.2 (2014-09-10)
 ------------------
 
