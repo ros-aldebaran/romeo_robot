@@ -2,8 +2,8 @@
 Changelog for package romeo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.2 (2014-09-10)
+------------------
 * test ssh access
 * Contributors: margueda
 
