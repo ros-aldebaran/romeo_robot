@@ -10,7 +10,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 # Nothing that can be imported by other modules
-catkin_package(CATKIN_DEPENDS roscpp tf message_filter sensor_msgs)
+catkin_package(CATKIN_DEPENDS roscpp tf message_filters sensor_msgs)
 
 catkin_python_setup()
 
