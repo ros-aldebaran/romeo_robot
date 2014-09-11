@@ -2,6 +2,14 @@
 Changelog for package romeo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix dependencies for romeo_description
+* Contributors: Ha Dang
+
+* fix dependencies for romeo_description
+* Contributors: Ha Dang
+
 0.0.3 (2014-09-10)
 ------------------
 * fixed roscpp dependencies
