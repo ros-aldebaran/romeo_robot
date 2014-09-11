@@ -82,8 +82,6 @@ if( ${NAOqi_FOUND} AND ${Boost_FOUND} )
     # install pluginlib definition for the nodelet
     install(FILES naocamera_nodelet.xml
             DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
-    install(FILES launch/nodelet_manager.launch launch/nodelet_standalone.launch launch/nodelet_pipeline.launch
-            DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
 
     ####
 else()
