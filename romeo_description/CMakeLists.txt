@@ -25,6 +25,3 @@ install(DIRECTORY config/
 # Instructions to install urdf files
 install(DIRECTORY urdf/
     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf)
-# Instructions to install meshes files
-install(DIRECTORY meshes/
-    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/meshes)

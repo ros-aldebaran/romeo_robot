@@ -44,14 +44,14 @@ if( NAOqi_FOUND AND Boost_FOUND)
         ${NAOqi_LIBRARIES}
         ${Boost_LIBRARIES})
     add_dependencies(romeo_dcm_driver ${catkin_EXPORTED_TARGETS})
+
+    install(TARGETS romeo_dcm_driver
+        RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+
 else()
     message(STATUS "Cannot find NAOqi C++ sdk; C++ nodes will NOT be built")
 endif()
 
-
-install(TARGETS romeo_dcm_driver
-  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
 
 # install(DIRECTORY launch 
 #   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
