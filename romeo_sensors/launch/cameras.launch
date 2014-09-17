@@ -4,33 +4,8 @@
 
   <arg name="nao_ip" default="$(optenv NAO_IP 127.0.0.1)" />
   <arg name="nao_port" default="$(optenv NAO_PORT 9559)" />
-  <node pkg="nao_sensors" type="camera.py" name="camera_top" required="true" args="--pip=$(arg nao_ip) --pport=$(arg nao_port)" output="screen">
-     <param name="calibration_file_bottom" type="string" value="file://$(find nao_driver)/config/nao_bottom_640x480.yaml"/>
-     <param name="calibration_file_top" type="string" value="file://$(find nao_driver)/config/nao_top_640x480.yaml"/>
-     <param name="resolution" type="int" value="2" /> <!--QQVGA=0, QVGA=1, VGA=2 -->
-     <param name="color_space" type="int" value="13" /> <!-- 9 = YUV422, 11 = RGB, 13 = BGR -->
-     <param name="use_ros_time" type="bool" value="true" />
-     <param name="fps" type="int" value="15" />
-     <param name="source" type="int" value="0" /> <!-- go for the depth camera-->
-  </node>
-  <node pkg="nao_sensors" type="camera.py" name="camera_bottom" required="true" args="--pip=$(arg nao_ip) --pport=$(arg nao_port)" output="screen">
-     <param name="calibration_file_bottom" type="string" value="file://$(find nao_driver)/config/nao_bottom_640x480.yaml"/>
-     <param name="calibration_file_top" type="string" value="file://$(find nao_driver)/config/nao_top_640x480.yaml"/>
-     <param name="resolution" type="int" value="2" /> <!--QQVGA=0, QVGA=1, VGA=2 -->
-     <param name="color_space" type="int" value="13" /> <!-- 9 = YUV422, 11 = RGB, 13 = BGR -->
-     <param name="use_ros_time" type="bool" value="true" />
-     <param name="fps" type="int" value="15" />
-     <param name="source" type="int" value="1" /> <!-- go for the depth camera-->
-  </node>
-  <node pkg="nao_sensors" type="camera.py" name="camera_depth" required="true" args="--pip=$(arg nao_ip) --pport=$(arg nao_port)" output="screen">
-     <param name="calibration_file_bottom" type="string" value="file://$(find nao_driver)/config/nao_bottom_640x480.yaml"/>
-     <param name="calibration_file_top" type="string" value="file://$(find nao_driver)/config/nao_top_640x480.yaml"/>
-     <param name="resolution" type="int" value="1" /> <!--QQVGA=0, QVGA=1, VGA=2 -->
-     <param name="color_space" type="int" value="17" /> <!-- 9 = YUV422, 11 = RGB, 13 = BGR -->
-     <param name="camera3d_frame" type="string" value="/CameraDepth_frame" />
-     <param name="use_ros_time" type="bool" value="true" />
-     <param name="fps" type="int" value="15" />
-     <param name="source" type="int" value="2" /> <!-- go for the depth camera-->
+
+  <node pkg="romeo_sensors" type="camera_depth.py" name="camera_depth" required="true" args="--pip=$(arg nao_ip) --pport=$(arg nao_port)" output="screen">
   </node>
 </launch>
 

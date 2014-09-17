@@ -41,7 +41,7 @@ import camera_info_manager
 from sensor_msgs.msg._CameraInfo import CameraInfo
 
 #from dynamic_reconfigure.server import Server
-#from nao_camera.cfg import NaoCameraConfig
+#from nao_sensors.cfg import NaoCameraConfig
 
 from naoqi import ALProxy
 
@@ -49,27 +49,14 @@ from cv_bridge import CvBridge, CvBridgeError
 import cv2
 import numpy as np
 
-# import resolutions
-from nao_camera.vision_definitions import k960p, k4VGA, kVGA, kQVGA, kQQVGA
 # import color spaces
-from nao_camera.vision_definitions import kYUV422ColorSpace, kYUVColorSpace, \
-                    kRGBColorSpace, kBGRColorSpace, kDepthColorSpace
-# import extra parameters
-from nao_camera.vision_definitions import kCameraSelectID, kCameraAutoExpositionID, kCameraAecAlgorithmID, \
-                  kCameraContrastID, kCameraSaturationID, kCameraHueID, kCameraSharpnessID, kCameraAutoWhiteBalanceID, \
-                  kCameraExposureID, kCameraGainID, kCameraBrightnessID, kCameraWhiteBalanceID
-
-# those should appear in vision_definitions.py at some point
-kTopCamera = 0
-kBottomCamera = 1
-kDepthCamera = 2
+from nao_sensors.vision_definitions import kDepthColorSpace
 
 class NaoCam (NaoNode):
     def __init__(self):
-        NaoNode.__init__(self)
-        rospy.init_node('nao_camera')
+        NaoNode.__init__(self, 'nao_depth')
 
-        self.camProxy = self.getProxy("ALVideoDevice")
+        self.camProxy = self.get_proxy("ALVideoDevice")
         if self.camProxy is None:
             exit(1)
         self.nameId = None
@@ -84,23 +71,20 @@ class NaoCam (NaoNode):
         self.pub_info_ = rospy.Publisher('~camera_info', CameraInfo)
 
         # initialize the parameter of the depth camera
-	self.setup_cam()
+        self.setup_cam()
 
     def setup_cam( self):
         # unsubscribe for all zombie subscribers
         self.camProxy.unsubscribeAllInstances("rospy_gvm")
         # subscribe
-	resolution = 1 #320x240
-	framerate  = 15
-	color_space= 17 # mono16
-        self.nameId = self.camProxy.subscribe("rospy_gvm", resolution, color_space, framerate)
+        kDepthCamera = 2
+        self.frame_id = rospy.get_param("~frame_id", "/CameraDepth_frame")
+        resolution = rospy.get_param("~resolution", 1)  #320x240
+        framerate  = rospy.get_param("~fps", 15)
+        color_space= rospy.get_param("~color_space", 17) # mono16
+        self.nameId = self.camProxy.subscribeCamera("rospy_gvm", kDepthCamera, resolution, color_space, framerate)
         rospy.loginfo('Using camera: depth camera. Subscriber name is %s .' % (self.nameId))
 
-	self.frame_id = rospy.get_param("~frame_id", "/CameraDepth_frame");
-
-        self.camProxy.setResolution(self.nameId, resolution)
-        self.camProxy.setFrameRate(self.nameId, framerate)
-        self.camProxy.setColorSpace(self.nameId, color_space)#depth
         return
 
     def main_loop(self):
@@ -128,15 +112,7 @@ class NaoCam (NaoNode):
             img.height = image[1]
             img.width = image[0]
             nbLayers = image[2]
-            if image[3] == kYUVColorSpace:
-                encoding = "mono8"
-            elif image[3] == kRGBColorSpace:
-                encoding = "rgb8"
-            elif image[3] == kBGRColorSpace:
-                encoding = "bgr8"
-            elif image[3] == kYUV422ColorSpace:
-                encoding = "yuv422" # this works only in ROS groovy and later
-            elif image[3] == kDepthColorSpace:
+            if image[3] == kDepthColorSpace:
                 encoding = "mono16"
             else:
                 rospy.logerr("Received unknown encoding: {0}".format(image[3]))
