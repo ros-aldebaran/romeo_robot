@@ -14,13 +14,13 @@ romeo sensors needs NAO_IP in order to get images from Romeo's cameras. So befor
 
 If your catkin workspace is correctly sourced, you can run the following command without error:
 
-roslaunch romeo_sensors cameras.launch
+      roslaunch romeo_sensors cameras.launch
 
 Now you can use image_view or rviz to visualize the image(s) that publishes by romeo_sensors. If you run rostopic list, you should see the following topics in the returned list:
 
-/camera_depth/camera_info
-/camera_depth/image_raw
-/camera_depth/image_color
+      /camera_depth/camera_info
+      /camera_depth/image_raw
+      /camera_depth/image_color
 
 II. TO USE ON YOUR ROMEO
 =========================
@@ -39,9 +39,9 @@ roslaunch romeo_sensors cameras.launch
 
 Now you can use image_view or rviz to visualize the image(s) that publishes by romeo_sensors. If you run rostopic list, you should see the following topics in the returned list:
 
-/camera_depth/camera_info
-/camera_depth/image_raw
-/camera_depth/image_color
+      /camera_depth/camera_info
+      /camera_depth/image_raw
+      /camera_depth/image_color
 
 Now you can use image_view to visualize the image(s) that publishes by romeo_sensors. From remote computer, you can also run image_view to view images from romeo_sensors, you just need to export ROS_MASTER_URI, ROS_IP, and ROS_HOSTNAME with the right information.
 
