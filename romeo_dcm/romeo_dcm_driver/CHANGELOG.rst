@@ -2,8 +2,8 @@
 Changelog for package romeo_dcm_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.5 (2014-09-18)
+------------------
 * cleaning
 * Contributors: margueda
 
