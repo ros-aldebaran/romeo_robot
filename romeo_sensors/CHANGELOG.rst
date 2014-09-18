@@ -4,6 +4,16 @@ Changelog for package romeo_sensors
 
 Forthcoming
 -----------
+* update changelog
+* remove camera_depth.launch
+* Update README.md
+* Update and rename README_Romeo to README.md
+* cleaning
+* remove nao_camera from romeo_sensors
+* updated readme
+* new romeo_sensors with only launch files
+* Contributors: Ha Dang, margueda
+
 * remove camera_depth.launch
 * Update README.md
 * Update and rename README_Romeo to README.md

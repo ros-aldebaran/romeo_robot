@@ -2,6 +2,12 @@
 Changelog for package romeo_dcm_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'master' of github.com:ros-aldebaran/romeo_robot
+* updated readme
+* Contributors: margueda
+
 0.0.4 (2014-09-11)
 ------------------
 
