@@ -2,8 +2,8 @@
 Changelog for package romeo_dcm_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.6 (2014-09-19)
+------------------
 * fix dependencies for romeo_dcm_msgs
 * Contributors: Ha Dang
 
