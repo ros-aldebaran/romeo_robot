@@ -7,6 +7,7 @@ project(romeo_sensors)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
+  nao_sensors
 )
 
 # Instructions to install launch files
