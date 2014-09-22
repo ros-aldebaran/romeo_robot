@@ -2,6 +2,11 @@
 Changelog for package romeo_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix dependencies in CMakeLists
+* Contributors: Ha Dang
+
 0.0.6 (2014-09-19)
 ------------------
 
