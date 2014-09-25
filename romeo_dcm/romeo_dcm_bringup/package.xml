@@ -37,7 +37,8 @@ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISE
 
   <run_depend>rospy</run_depend>
   <run_depend>romeo_dcm_driver</run_depend>
-
+  <run_depend>romeo_description</run_depend>
+  <run_depend>romeo_dcm_control</run_depend>
 
   <export>
   </export>
