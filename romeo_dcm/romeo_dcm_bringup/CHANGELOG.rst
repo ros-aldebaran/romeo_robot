@@ -2,6 +2,11 @@
 Changelog for package romeo_dcm_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix dependencies
+* Contributors: margueda
+
 0.0.8 (2014-09-22)
 ------------------
 
