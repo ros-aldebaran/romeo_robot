@@ -8,6 +8,11 @@ find_package(catkin REQUIRED)
 
 catkin_package()
 
+catkin_package(CATKIN_DEPENDS
+  roscpp
+  rospy
+)
+
 # Instructions to install launch files
 install(DIRECTORY launch/
     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
