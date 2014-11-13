@@ -36,12 +36,9 @@
 from collections import defaultdict
 import rospy
 from sensor_msgs.msg import Image, CameraInfo
-from nao_driver.nao_driver_naoqi import NaoNode
+from naoqi_driver.naoqi_node import NaoqiNode
 import camera_info_manager
 from sensor_msgs.msg._CameraInfo import CameraInfo
-
-#from dynamic_reconfigure.server import Server
-#from nao_sensors.cfg import NaoCameraConfig
 
 from naoqi import ALProxy
 
@@ -50,11 +47,11 @@ import cv2
 import numpy as np
 
 # import color spaces
-from nao_sensors.vision_definitions import kDepthColorSpace
+from naoqi_sensors.vision_definitions import kDepthColorSpace
 
-class NaoCam (NaoNode):
+class NaoCam (NaoqiNode):
     def __init__(self):
-        NaoNode.__init__(self, 'nao_depth')
+        NaoqiNode.__init__(self, 'nao_depth')
 
         self.camProxy = self.get_proxy("ALVideoDevice")
         if self.camProxy is None:
