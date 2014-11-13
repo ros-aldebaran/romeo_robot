@@ -2,6 +2,11 @@
 Changelog for package romeo_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* comply to the new naoqi organization
+* Contributors: Vincent Rabaud
+
 0.0.9 (2014-09-25)
 ------------------
 
