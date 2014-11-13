@@ -2,8 +2,8 @@
 Changelog for package romeo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.10 (2014-11-13)
+-------------------
 * fix committer's name
 * Contributors: Vincent Rabaud
 
