@@ -12,8 +12,6 @@ find_package(catkin REQUIRED COMPONENTS
 # Nothing that can be imported by other modules
 catkin_package()
 
-catkin_python_setup()
-
 include_directories(${catkin_INCLUDE_DIRS})
 
 # Instructions to install launch files
@@ -28,8 +26,4 @@ install(DIRECTORY urdf/
 # Instructions to install meshes files
 install(DIRECTORY meshes/
     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/meshes)
-
-# Instructions to install script files
-install(DIRECTORY scripts/
-    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/scripts)
 
