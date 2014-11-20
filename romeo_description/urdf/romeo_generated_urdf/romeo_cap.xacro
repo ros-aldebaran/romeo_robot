@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!--*****************************************************************
+********************** File created by hand *************************
+*********************************************************************-->
+<!-- To include the cap in romeo model just add :
+    <xacro:include filename="romeo_cap.xacro"/>
+    to the romeo_robot.xacro file
+-->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <link name="CameraDepth_frame"/>
+    <joint name="CameraDepth_joint" type="fixed">
+        <parent link="HeadRoll_link"/>
+        <child link="CameraDepth_frame"/>
+        <origin rpy="2.0043951 0 1.57079632679" xyz="0.1403 -0.04708 0.14655"/>
+    </joint>
+</robot>
