@@ -11,5 +11,5 @@
 	<xacro:include filename="romeo_eyes.xacro"/>
 	<xacro:include filename="romeo_sensors.xacro"/>
 	<xacro:include filename="romeo_fingers.xacro"/>
-	<xacro:include filename="romeo_cap.xacro"/>
+    <xacro:include filename="romeo_cap.xacro"/>
 </robot>

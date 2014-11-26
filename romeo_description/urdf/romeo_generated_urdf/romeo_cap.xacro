@@ -18,7 +18,7 @@
       <inertial>
         <mass value="0.29923"/>
         <inertia ixx="0.000412832" ixy="-1.67846e-06" ixz="0.000111721" iyy="0.000383921" iyz="5.04259e-05" izz="0.000264006"/>
-        <origin rpy="0 0 0" xyz="0.00 0 0.0"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
       </inertial>
       <visual>
         <geometry>
@@ -30,7 +30,7 @@
     <joint name="Cap_joint" type="fixed">
         <parent link="HeadRoll_link"/>
         <child link="Cap"/>
-        <origin rpy="0 0 1.5706" xyz="0 0 0"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
     </joint>
 
 </robot>

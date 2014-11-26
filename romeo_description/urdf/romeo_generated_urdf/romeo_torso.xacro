@@ -18,7 +18,7 @@
 		</inertial>
 		<xacro:insert_visu_torso/>
 	</link>
-	<joint name="TrunkYaw_joint" type="revolute">
+	<joint name="TrunkYaw" type="revolute">
 		<parent link="torso"/>
 		<child link="body"/>
 		<origin rpy="0 0 0" xyz="0 0 0"/>
