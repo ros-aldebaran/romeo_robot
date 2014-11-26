@@ -2,8 +2,8 @@
 Changelog for package romeo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.11 (2014-11-26)
+-------------------
 * added romeo_robot metapackage
 * added romeo cap with xtion to meshes and urdf
 * update name for Hand actuator
