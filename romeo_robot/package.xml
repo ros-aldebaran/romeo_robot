@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>romeo_robot</name>
-  <version>0.0.0</version>
+  <version>0.0.10</version>
   <description>The romeo_robot metapackage</description>
 
   <author email="mikael.arguedas@gmail.com">Mikael Arguedas</author>
