@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+  <name>romeo_robot</name>
+  <version>0.0.0</version>
+  <description>The romeo_robot metapackage</description>
+
+  <author email="mikael.arguedas@gmail.com">Mikael Arguedas</author>
+  <maintainer email="mikael.arguedas@gmail.com">Mikael Arguedas</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+
+  <run_depend>romeo_description</run_depend>
+  <run_depend>romeo_sensors</run_depend>
+
+</package>
