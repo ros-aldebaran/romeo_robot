@@ -2,6 +2,11 @@
 Changelog for package romeo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* remove _actuator suffix from Hand joints
+* Contributors: Mikael ARGUEDAS
+
 0.0.11 (2014-11-26)
 -------------------
 * added romeo_robot metapackage

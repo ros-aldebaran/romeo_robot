@@ -2,6 +2,9 @@
 Changelog for package romeo_robot
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.0.11 (2014-11-26)
 -------------------
 * added romeo_robot metapackage
