@@ -2,6 +2,15 @@
 Changelog for package romeo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added romeo_robot metapackage
+* added romeo cap with xtion to meshes and urdf
+* update name for Hand actuator
+* revert error during previous commit
+* update xacro files and meshes
+* Contributors: Mikael ARGUEDAS, margueda
+
 0.0.10 (2014-11-13)
 -------------------
 * fix committer's name
