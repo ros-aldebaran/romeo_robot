@@ -12,8 +12,8 @@
 	</joint>
 	<link name="LShoulder">
 		<inertial>
-			<mass value="0.43527"/>
-			<inertia ixx="0.000268738" ixy="-7.98278e-05" ixz="8.02495e-06" iyy="0.000151197" iyz="1.72313e-05" izz="0.000290161"/>
+			<mass value="0.541429"/>
+			<inertia ixx="0.00033428" ixy="-9.92972e-05" ixz="9.98217e-06" iyy="0.000188073" iyz="2.14339e-05" izz="0.000360929"/>
 			<origin rpy="0 0 0" xyz="-0.0112798 -0.0260712 0.00468882"/>
 		</inertial>
 	</link>
@@ -26,8 +26,8 @@
 	</joint>
 	<link name="LShoulderYaw_link">
 		<inertial>
-			<mass value="0.69262"/>
-			<inertia ixx="0.000953111" ixy="0.000479248" ixz="0.000898232" iyy="0.00250956" iyz="-1.65544e-05" izz="0.00233103"/>
+			<mass value="0.861545"/>
+			<inertia ixx="0.00118557" ixy="0.000596133" ixz="0.0011173" iyy="0.00312162" iyz="-2.05919e-05" izz="0.00289955"/>
 			<origin rpy="0 0 0" xyz="0.0965281 0.00465308 0.00168775"/>
 		</inertial>
 		<xacro:insert_visu_LShoulderYaw_link/>
@@ -41,8 +41,8 @@
 	</joint>
 	<link name="LForeArm">
 		<inertial>
-			<mass value="0.48271"/>
-			<inertia ixx="0.000166894" ixy="9.68978e-06" ixz="-1.49781e-05" iyy="0.000408141" iyz="1.2555e-06" izz="0.00036684"/>
+			<mass value="0.600439"/>
+			<inertia ixx="0.000207598" ixy="1.2053e-05" ixz="-1.86312e-05" iyy="0.000507683" iyz="1.56171e-06" izz="0.000456309"/>
 			<origin rpy="0 0 0" xyz="-0.0348859 -0.0011589 -0.00148134"/>
 		</inertial>
 	</link>
@@ -55,8 +55,8 @@
 	</joint>
 	<link name="LElbow">
 		<inertial>
-			<mass value="0.36997"/>
-			<inertia ixx="0.000404839" ixy="0.000470943" ixz="2.57237e-05" iyy="0.00102723" iyz="2.9528e-05" izz="0.000987329"/>
+			<mass value="0.460203"/>
+			<inertia ixx="0.000503576" ixy="0.000585803" ixz="3.19975e-05" iyy="0.00127777" iyz="3.67296e-05" izz="0.00122813"/>
 			<origin rpy="0 0 0" xyz="0.068523 0.0097 0.00458766"/>
 		</inertial>
 		<xacro:insert_visu_LElbow/>
@@ -70,8 +70,8 @@
 	</joint>
 	<link name="LWristRoll_link">
 		<inertial>
-			<mass value="0.17551"/>
-			<inertia ixx="8.1046e-05" ixy="-1.46219e-06" ixz="-3.67139e-05" iyy="0.000308979" iyz="-8.92509e-08" izz="0.000294305"/>
+			<mass value="0.218316"/>
+			<inertia ixx="0.000100812" ixy="-1.81881e-06" ixz="-4.56681e-05" iyy="0.000384336" iyz="-1.11019e-07" izz="0.000366084"/>
 			<origin rpy="0 0 0" xyz="-0.0592449 6e-05 -0.00144745"/>
 		</inertial>
 		<xacro:insert_visu_LWristRoll_link/>
@@ -85,8 +85,8 @@
 	</joint>
 	<link name="LWristYaw_link">
 		<inertial>
-			<mass value="0.061"/>
-			<inertia ixx="1.25161e-05" ixy="-4.16668e-08" ixz="-7.01768e-07" iyy="2.83374e-05" iyz="1.56375e-08" izz="2.79694e-05"/>
+			<mass value="0.0758774"/>
+			<inertia ixx="1.55687e-05" ixy="-5.1829e-08" ixz="-8.72923e-07" iyy="3.52487e-05" iyz="1.94513e-08" izz="3.4791e-05"/>
 			<origin rpy="0 0 0" xyz="-0.00657144 0.00017 -0.000115829"/>
 		</inertial>
 		<xacro:insert_visu_LWristYaw_link/>
@@ -100,8 +100,8 @@
 	</joint>
 	<link name="l_wrist">
 		<inertial>
-			<mass value="0.35549"/>
-			<inertia ixx="0.000325271" ixy="-0.000324985" ixz="1.52493e-05" iyy="0.000666741" iyz="6.27901e-05" izz="0.000820118"/>
+			<mass value="0.442191"/>
+			<inertia ixx="0.000404603" ixy="-0.000404247" ixz="1.89685e-05" iyy="0.000829354" iyz="7.81042e-05" izz="0.00102014"/>
 			<origin rpy="0 0 0" xyz="0.07358 -0.00628 -0.00098"/>
 		</inertial>
 		<xacro:insert_visu_l_wrist/>
@@ -128,8 +128,8 @@
 	</joint>
 	<link name="RShoulder">
 		<inertial>
-			<mass value="0.43527"/>
-			<inertia ixx="0.000264235" ixy="8.24341e-05" ixz="1.55448e-05" iyy="0.000160752" iyz="-3.06968e-05" izz="0.000285109"/>
+			<mass value="0.541429"/>
+			<inertia ixx="0.00032868" ixy="0.000102539" ixz="1.9336e-05" iyy="0.000199958" iyz="-3.81835e-05" izz="0.000354645"/>
 			<origin rpy="0 0 0" xyz="-0.0112798 0.0260712 0.00468882"/>
 		</inertial>
 	</link>
@@ -142,8 +142,8 @@
 	</joint>
 	<link name="RShoulderYaw_link">
 		<inertial>
-			<mass value="0.69262"/>
-			<inertia ixx="0.000955527" ixy="-0.000291705" ixz="0.000927729" iyy="0.00250758" iyz="1.49948e-05" izz="0.00233059"/>
+			<mass value="0.861545"/>
+			<inertia ixx="0.00118857" ixy="-0.00036285" ixz="0.001154" iyy="0.00311916" iyz="1.86519e-05" izz="0.002899"/>
 			<origin rpy="0 0 0" xyz="0.0965281 -0.00465308 0.00168775"/>
 		</inertial>
 		<xacro:insert_visu_RShoulderYaw_link/>
@@ -157,8 +157,8 @@
 	</joint>
 	<link name="RForeArm">
 		<inertial>
-			<mass value="0.48271"/>
-			<inertia ixx="0.000166993" ixy="-6.12728e-06" ixz="-1.49476e-05" iyy="0.000408038" iyz="7.67117e-07" izz="0.000366843"/>
+			<mass value="0.600439"/>
+			<inertia ixx="0.000207722" ixy="-7.62167e-06" ixz="-1.85932e-05" iyy="0.000507556" iyz="9.54211e-07" izz="0.000456313"/>
 			<origin rpy="0 0 0" xyz="-0.0348859 0.0011589 -0.00148134"/>
 		</inertial>
 	</link>
@@ -171,8 +171,8 @@
 	</joint>
 	<link name="RElbow">
 		<inertial>
-			<mass value="0.36997"/>
-			<inertia ixx="0.000404839" ixy="-2.08748e-05" ixz="2.57237e-05" iyy="0.00102723" iyz="-3.39957e-06" izz="0.000987329"/>
+			<mass value="0.460203"/>
+			<inertia ixx="0.000503576" ixy="-2.59661e-05" ixz="3.19975e-05" iyy="0.00127777" iyz="-4.2287e-06" izz="0.00122813"/>
 			<origin rpy="0 0 0" xyz="0.068523 -0.0097 0.00458766"/>
 		</inertial>
 		<xacro:insert_visu_RElbow/>
@@ -186,8 +186,8 @@
 	</joint>
 	<link name="RWristRoll_link">
 		<inertial>
-			<mass value="0.17551"/>
-			<inertia ixx="8.1046e-05" ixy="-2.14425e-07" ixz="-3.67139e-05" iyy="0.000308979" iyz="-5.87658e-08" izz="0.000294305"/>
+			<mass value="0.218316"/>
+			<inertia ixx="0.000100812" ixy="-2.66721e-07" ixz="-4.56681e-05" iyy="0.000384336" iyz="-7.30984e-08" izz="0.000366084"/>
 			<origin rpy="0 0 0" xyz="-0.0592449 -6e-05 -0.00144745"/>
 		</inertial>
 		<xacro:insert_visu_RWristRoll_link/>
@@ -201,8 +201,8 @@
 	</joint>
 	<link name="RWristYaw_link">
 		<inertial>
-			<mass value="0.061"/>
-			<inertia ixx="1.25161e-05" ixy="9.4625e-08" ixz="-7.01768e-07" iyy="2.83374e-05" iyz="1.80397e-08" izz="2.79694e-05"/>
+			<mass value="0.0758774"/>
+			<inertia ixx="1.55687e-05" ixy="1.17703e-07" ixz="-8.72923e-07" iyy="3.52487e-05" iyz="2.24395e-08" izz="3.4791e-05"/>
 			<origin rpy="0 0 0" xyz="-0.00657144 -0.00017 -0.000115829"/>
 		</inertial>
 		<xacro:insert_visu_RWristYaw_link/>
@@ -216,8 +216,8 @@
 	</joint>
 	<link name="r_wrist">
 		<inertial>
-			<mass value="0.35549"/>
-			<inertia ixx="0.000325271" ixy="3.54589e-06" ixz="1.52493e-05" iyy="0.000666741" iyz="5.84145e-05" izz="0.000820118"/>
+			<mass value="0.442191"/>
+			<inertia ixx="0.000404603" ixy="4.4107e-06" ixz="1.89685e-05" iyy="0.000829354" iyz="7.26613e-05" izz="0.00102014"/>
 			<origin rpy="0 0 0" xyz="0.07358 0.00628 -0.00098"/>
 		</inertial>
 		<xacro:insert_visu_r_wrist/>

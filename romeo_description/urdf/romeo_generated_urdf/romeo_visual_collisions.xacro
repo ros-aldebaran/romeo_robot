@@ -45,20 +45,6 @@
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
 	</xacro:macro>
-	<xacro:macro name="insert_visu_LElbow">
-		<visual>
-			<geometry>
-				<mesh filename="package://romeo_description/meshes/LElbowYaw.dae" scale="1 1 1"/>
-			</geometry>
-			<origin rpy="0 0 0" xyz="0 0 0"/>
-		</visual>
-		<collision>
-			<geometry>
-				<mesh filename="package://romeo_description/meshes/LElbowYaw_0.10.stl" scale="1 1 1"/>
-			</geometry>
-			<origin rpy="0 0 0" xyz="0 0 0"/>
-		</collision>
-	</xacro:macro>
 	<xacro:macro name="insert_visu_RFinger12_link">
 		<visual>
 			<geometry>
@@ -283,6 +269,20 @@
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
 	</xacro:macro>
+	<xacro:macro name="insert_visu_LWristRoll_link">
+		<visual>
+			<geometry>
+				<mesh filename="package://romeo_description/meshes/LWristRoll.dae" scale="1 1 1"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://romeo_description/meshes/LWristRoll_0.10.stl" scale="1 1 1"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+		</collision>
+	</xacro:macro>
 	<xacro:macro name="insert_visu_RThumb1_link">
 		<visual>
 			<geometry>
@@ -479,20 +479,6 @@
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
 	</xacro:macro>
-	<xacro:macro name="insert_visu_LFinger23_link">
-		<visual>
-			<geometry>
-				<mesh filename="package://romeo_description/meshes/LFinger23.dae" scale="1 1 1"/>
-			</geometry>
-			<origin rpy="0 0 0" xyz="0 0 0"/>
-		</visual>
-		<collision>
-			<geometry>
-				<mesh filename="package://romeo_description/meshes/LFinger23_0.10.stl" scale="1 1 1"/>
-			</geometry>
-			<origin rpy="0 0 0" xyz="0 0 0"/>
-		</collision>
-	</xacro:macro>
 	<xacro:macro name="insert_visu_LTibia">
 		<visual>
 			<geometry>
@@ -507,6 +493,20 @@
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
 	</xacro:macro>
+	<xacro:macro name="insert_visu_LFinger23_link">
+		<visual>
+			<geometry>
+				<mesh filename="package://romeo_description/meshes/LFinger23.dae" scale="1 1 1"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://romeo_description/meshes/LFinger23_0.10.stl" scale="1 1 1"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+		</collision>
+	</xacro:macro>
 	<xacro:macro name="insert_visu_RElbow">
 		<visual>
 			<geometry>
@@ -517,6 +517,20 @@
 		<collision>
 			<geometry>
 				<mesh filename="package://romeo_description/meshes/RElbowYaw_0.10.stl" scale="1 1 1"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+		</collision>
+	</xacro:macro>
+	<xacro:macro name="insert_visu_LElbow">
+		<visual>
+			<geometry>
+				<mesh filename="package://romeo_description/meshes/LElbowYaw.dae" scale="1 1 1"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+		</visual>
+		<collision>
+			<geometry>
+				<mesh filename="package://romeo_description/meshes/LElbowYaw_0.10.stl" scale="1 1 1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>
@@ -545,20 +559,6 @@
 		<collision>
 			<geometry>
 				<mesh filename="package://romeo_description/meshes/RAnkleRoll_0.10.stl" scale="1 1 1"/>
-			</geometry>
-			<origin rpy="0 0 0" xyz="0 0 0"/>
-		</collision>
-	</xacro:macro>
-	<xacro:macro name="insert_visu_LWristRoll_link">
-		<visual>
-			<geometry>
-				<mesh filename="package://romeo_description/meshes/LWristRoll.dae" scale="1 1 1"/>
-			</geometry>
-			<origin rpy="0 0 0" xyz="0 0 0"/>
-		</visual>
-		<collision>
-			<geometry>
-				<mesh filename="package://romeo_description/meshes/LWristRoll_0.10.stl" scale="1 1 1"/>
 			</geometry>
 			<origin rpy="0 0 0" xyz="0 0 0"/>
 		</collision>

@@ -12,8 +12,8 @@
 	</joint>
 	<link name="NeckYaw_link">
 		<inertial>
-			<mass value="0.32745"/>
-			<inertia ixx="0.000242012" ixy="-2.69441e-07" ixz="-1.29328e-05" iyy="0.000225485" iyz="-6.99834e-07" izz="7.29248e-05"/>
+			<mass value="0.377845"/>
+			<inertia ixx="0.000279258" ixy="-3.10908e-07" ixz="-1.49231e-05" iyy="0.000260188" iyz="-8.07538e-07" izz="8.41479e-05"/>
 			<origin rpy="0 0 0" xyz="-0.00635646 0 -0.030002"/>
 		</inertial>
 	</link>
@@ -26,8 +26,8 @@
 	</joint>
 	<link name="NeckPitch_link">
 		<inertial>
-			<mass value="0.29923"/>
-			<inertia ixx="0.000412832" ixy="-1.67846e-06" ixz="0.000111721" iyy="0.000383921" iyz="5.04259e-05" izz="0.000264006"/>
+			<mass value="0.345282"/>
+			<inertia ixx="0.000476367" ixy="-1.93678e-06" ixz="0.000128915" iyy="0.000443007" iyz="5.81865e-05" izz="0.000304636"/>
 			<origin rpy="0 0 0" xyz="0.00372 0 0.04811"/>
 		</inertial>
 		<xacro:insert_visu_NeckPitch_link/>
@@ -41,8 +41,8 @@
 	</joint>
 	<link name="HeadPitch_link">
 		<inertial>
-			<mass value="0.13728"/>
-			<inertia ixx="2.23022e-05" ixy="1.3103e-07" ixz="-1.31933e-05" iyy="6.44652e-05" iyz="-4.26e-09" izz="5.78637e-05"/>
+			<mass value="0.158407"/>
+			<inertia ixx="2.57346e-05" ixy="1.51196e-07" ixz="-1.52238e-05" iyy="7.43865e-05" iyz="-4.91562e-09" izz="6.6769e-05"/>
 			<origin rpy="0 0 0" xyz="0.0014 0 -0.00462"/>
 		</inertial>
 	</link>
@@ -55,8 +55,8 @@
 	</joint>
 	<link name="HeadRoll_link">
 		<inertial>
-			<mass value="1.79432"/>
-			<inertia ixx="0.00808695" ixy="-3.36239e-05" ixz="0.00239535" iyy="0.00960886" iyz="0.000260292" izz="0.00796332"/>
+			<mass value="2.07047"/>
+			<inertia ixx="0.00933153" ixy="-3.87986e-05" ixz="0.002764" iyy="0.0110877" iyz="0.000300351" izz="0.00918888"/>
 			<origin rpy="0 0 0" xyz="0.01263 0 0.07498"/>
 		</inertial>
 		<xacro:insert_visu_HeadRoll_link/>
