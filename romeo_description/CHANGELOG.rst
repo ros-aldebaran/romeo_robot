@@ -2,6 +2,14 @@
 Changelog for package romeo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update to the latest Romeo URDF
+* do not forget the cap
+* update to the latest urdf from doc_urdf in NAOqi
+* update with the latest generated URDF
+* Contributors: Vincent Rabaud
+
 0.0.13 (2014-12-04)
 -------------------
 
