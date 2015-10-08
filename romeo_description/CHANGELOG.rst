@@ -2,8 +2,8 @@
 Changelog for package romeo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.0 (2015-10-08)
+------------------
 * update to the latest Romeo URDF
 * do not forget the cap
 * update to the latest urdf from doc_urdf in NAOqi

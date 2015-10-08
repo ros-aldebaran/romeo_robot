@@ -2,8 +2,8 @@
 Changelog for package romeo_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.0 (2015-10-08)
+------------------
 * update the maintainer and make it architecture independent
 * fix dependencies
 * Contributors: Vincent Rabaud

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>romeo_sensors</name>
-  <version>0.0.13</version>
+  <version>0.1.0</version>
   <description>The romeo_sensors package</description>
 
   <maintainer email="vincent.rabaud@gmail.com">Vincent Rabaud</maintainer>
