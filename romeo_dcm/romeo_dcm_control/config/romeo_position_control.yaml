@@ -5,13 +5,21 @@ romeo_dcm:
     publish_rate: 50  
 
   # Controllers ------------------------------------------------
-  HeadYaw_position_controller:
+  NeckYaw_position_controller:
     type: position_controllers/JointPositionController
-    joint: HeadYaw
+    joint: NeckYaw
+    
+  NeckPitch_position_controller:
+    type: position_controllers/JointPositionController
+    joint: NeckPitch
 
   HeadPitch_position_controller:
     type: position_controllers/JointPositionController
     joint: HeadPitch
+    
+  HeadRoll_position_controller:
+    type: position_controllers/JointPositionController
+    joint: HeadRoll
 
   LShoulderPitch_position_controller:
     type: position_controllers/JointPositionController
