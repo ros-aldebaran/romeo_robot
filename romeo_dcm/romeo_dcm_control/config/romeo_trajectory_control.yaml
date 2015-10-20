@@ -24,6 +24,8 @@ romeo_dcm:
       - LShoulderYaw
       - LElbowRoll
       - LElbowYaw
+      - LWristRoll
+      - LWristYaw
   RightArm_controller:
     type: position_controllers/JointTrajectoryController
     joints:
@@ -31,18 +33,16 @@ romeo_dcm:
       - RShoulderYaw
       - RElbowRoll
       - RElbowYaw
+      - RWristRoll
+      - RWristYaw
   LeftHand_controller:
     type: position_controllers/JointTrajectoryController
     joints:
-      - LWristRoll
-      - LWristYaw
       - LWristPitch
       - LHand
   RightHand_controller:
     type: position_controllers/JointTrajectoryController
     joints:
-      - RWristRoll
-      - RWristYaw
       - RWristPitch     
       - RHand
   LeftLeg_controller:
