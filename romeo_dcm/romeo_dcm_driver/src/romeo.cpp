@@ -50,7 +50,7 @@ bool Romeo::initialize()
     //Romeo Joints Initialization
     const char* joint[] = { "NeckYaw",
                             "NeckPitch",
-			    "HeadPitch",
+                            "HeadPitch",
                             "HeadRoll",
                             "LShoulderPitch",
                             "LShoulderYaw",
@@ -59,7 +59,7 @@ bool Romeo::initialize()
                             "LWristRoll",
                             "LWristYaw",
                             "LWristPitch",
-			    "LHand",
+                            "LHand",
                             "TrunkYaw",
                             "LHipYaw",
                             "LHipRoll",
@@ -73,14 +73,14 @@ bool Romeo::initialize()
                             "RKneePitch",
                             "RAnklePitch",
                             "RAnkleRoll",
-			    "RShoulderPitch",
+                            "RShoulderPitch",
                             "RShoulderYaw",
                             "RElbowRoll",
                             "RElbowYaw",
                             "RWristRoll",
                             "RWristYaw",
                             "RWristPitch",
-			    "RHand" };
+                            "RHand" };
     joint_names_ = vector<string>(joint, end(joint));
     
     for(vector<string>::iterator it=joint_names_.begin();it!=joint_names_.end();it++)
@@ -130,13 +130,7 @@ bool Romeo::initialize()
 
     stiffnesses_enabled_ = true;
 
-    //eliminate all eye joints because they are not moveable
-    vector<string> tmp_names = m_motionProxy->getBodyNames("Body");
-    for(int i = tmp_names.size()-1; i > -1; --i) {
-       if (tmp_names.at(i).find("Eye") != string::npos)
-	  tmp_names.erase(tmp_names.begin()+i);
-    }
-    m_jointState.name = tmp_names;
+    m_jointState.name = m_motionProxy->getBodyNames("Body");
 
     std::stringstream ss;
     std::copy(m_jointState.name.begin(), m_jointState.name.end()-1, std::ostream_iterator<std::string>(ss,","));
@@ -589,12 +583,6 @@ void Romeo::readJoints()
 void Romeo::publishJointStateFromAlMotion(){
   std::vector<float> positionData;
   positionData = m_motionProxy->getAngles("Body", true);
-  //eliminate all eye joints because they are not moveable
-  vector<string> tmp_names = m_motionProxy->getBodyNames("Body");
-  for(int i = tmp_names.size()-1; i > -1; --i) {
-  if (tmp_names.at(i).find("Eye") != string::npos)
-    positionData.erase(positionData.begin()+i);
-  }
   m_jointState.header.stamp = ros::Time::now();
   m_jointState.header.frame_id = "base_link";
   m_jointState.position.resize(positionData.size());
@@ -631,7 +619,7 @@ void Romeo::writeJoints()
         {
             commands_[3][i][0][0] = float(joint_commands_[i]);
             commands_[3][i][0][1] = T+(int)(800.0f/controller_freq_);
-	//ROS_INFO(<<i<<"\t"<<commands_[3][i][0][0]<<"\n");
+       //ROS_INFO(<<i<<"\t"<<commands_[3][i][0][0]<<"\n");
         }
         
         dcm_proxy_->callVoid("setAlias",commands_);
