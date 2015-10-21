@@ -117,4 +117,6 @@ romeo_dcm:
     type: position_controllers/JointPositionController
     joint: RAnkleRoll
 
-
+  TrunkYaw_position_controller:
+    type: position_controllers/JointPositionContro$
+    joint: TrunkYaw
