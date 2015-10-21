@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>romeo_description</name>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
   <description>The romeo_description package</description>
 
   <author email="mikael.arguedas@gmail.com">Mikael Arguedas</author>
