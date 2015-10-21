@@ -2,6 +2,9 @@
 Changelog for package romeo_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.1 (2015-10-21)
 ------------------
 * add a cHANGELOG for romeo_bringup

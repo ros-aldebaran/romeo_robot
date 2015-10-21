@@ -2,6 +2,9 @@
 Changelog for package romeo_dcm_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.1 (2015-10-21)
 ------------------
 * adding head and torso controllers
