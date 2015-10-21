@@ -4,6 +4,11 @@ Changelog for package romeo_bringup
 
 Forthcoming
 -----------
+* add a cHANGELOG for romeo_bringup
+* artifically bump romeo_bringup's version for a proper release
+* Adding new package romeo_bringup
+* Contributors: Vincent Rabaud, nlyubova
+
 * artifically bump romeo_bringup's version for a proper release
 * Adding new package romeo_bringup
 * Contributors: Vincent Rabaud, nlyubova

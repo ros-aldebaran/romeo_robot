@@ -2,6 +2,11 @@
 Changelog for package romeo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update to the latest naoqi_tools script
+* Contributors: Vincent Rabaud
+
 0.1.0 (2015-10-08)
 ------------------
 * update to the latest Romeo URDF
