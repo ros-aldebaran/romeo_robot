@@ -2,8 +2,8 @@
 Changelog for package romeo_dcm_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.1 (2015-10-21)
+------------------
 * Adding back eyes joints, otherwise the TF tree is broken
 * adding head and torso controllers
 * Contributors: nlyubova

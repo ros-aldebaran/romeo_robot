@@ -2,8 +2,8 @@
 Changelog for package romeo_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.1 (2015-10-21)
+------------------
 * rename romeo_sensors to romeo_sensors_py
 * Contributors: Vincent Rabaud
 

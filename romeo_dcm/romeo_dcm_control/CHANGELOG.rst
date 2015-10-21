@@ -2,8 +2,8 @@
 Changelog for package romeo_dcm_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.1 (2015-10-21)
+------------------
 * adding head and torso controllers
 * few changes in arm and hand controllers to make compatible with romeo_moveit_config
 * Removing the namespace prefix and fixing the head controllers with correct joint names (the HeadYaw joint does not exist)
