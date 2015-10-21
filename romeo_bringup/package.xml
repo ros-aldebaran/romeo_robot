@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>romeo_bringup</name>
+  <version>0.0.1</version>
+  <description>The romeo_bringup package</description>
+
+  <maintainer email="natalia.lyubova@gmail.com">Natalia Lyubova</maintainer>
+
+  <license>Apache 2.0</license>
+
+  <run_depend>naoqi_driver</run_depend>
+  <run_depend>romeo_description</run_depend>
+  <run_depend>romeo_sensors_py</run_depend>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>

@@ -5,13 +5,10 @@
 
   <!-- load the controllers -->
   <node name="romeo_trajectory_controller" pkg="controller_manager" type="spawner" respawn="false"
-    output="screen" ns="/romeo_dcm" args="/romeo_dcm/LeftArm_controller /romeo_dcm/RightArm_controller /romeo_dcm/Torso_controller /romeo_dcm/LeftHand_controller /romeo_dcm/joint_state_controller"/>
-    <!-- args="/romeo_dcm/RightArm_controller /romeo_dcm/RightHand_controller /romeo_dcm/LeftArm_controller /romeo_dcm/LeftHand_controller /romeo_dcm/Head_controller /romeo_dcm/LeftLeg_controller /romeo_dcm/RightLeg_controller /romeo_dcm/joint_state_controller"/> -->
-
-  <!-- convert joint states to TF transforms for rviz, etc -->
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
-    respawn="false" output="screen">
-    <remap from="/joint_states" to="/romeo_dcm/joint_states" />
-  </node>
+    output="screen" args="/romeo_dcm/LeftArm_controller /romeo_dcm/RightArm_controller
+      /romeo_dcm/LeftHand_controller /romeo_dcm/RightHand_controller
+      /romeo_dcm/Head_controller
+      /romeo_dcm/Torso_controller
+      /romeo_dcm/joint_state_controller"/>
 
 </launch>
