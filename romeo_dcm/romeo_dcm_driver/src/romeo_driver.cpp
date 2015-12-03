@@ -76,8 +76,8 @@ int main( int argc, char** argv )
         m_motionProxy->stiffnessInterpolation("LArm", 1.0f, 2.0f);
         m_motionProxy->stiffnessInterpolation("RArm", 1.0f, 2.0f);
 
-        m_motionProxy->stiffnessInterpolation("Head", 1.0f, 2.0f);
-        m_motionProxy->stiffnessInterpolation("Trunk", 1.0f, 2.0f);
+        //m_motionProxy->stiffnessInterpolation("Head", 1.0f, 2.0f);
+        //m_motionProxy->stiffnessInterpolation("Trunk", 1.0f, 2.0f);
 
     }
 
@@ -128,8 +128,8 @@ int main( int argc, char** argv )
     AL::ALProxy tempMotion("ALMotion", pip, pport);
     tempMotion.callVoid("setStiffnesses","LArm",0.0f);
     tempMotion.callVoid("setStiffnesses","RArm",0.0f);
-    tempMotion.callVoid("setStiffnesses","Head",0.0f);
-    tempMotion.callVoid("setStiffnesses","Trunk",0.0f);
+    //tempMotion.callVoid("setStiffnesses","Head",0.0f);
+    //tempMotion.callVoid("setStiffnesses","Trunk",0.0f);
 
 
     ROS_INFO( "Quitting... " );
