@@ -2,11 +2,19 @@
 <package>
   <name>romeo_bringup</name>
   <version>0.1.2</version>
-  <description>The romeo_bringup package</description>
+  <description>The romeo_bringup package 
+    contains launch and configuration files required to bring ROS interfaces for Romeo up into a running state.
+  </description>
 
   <maintainer email="natalia.lyubova@gmail.com">Natalia Lyubova</maintainer>
+  
+  <author email="natalia.lyubova@gmail.com">Natalia Lyubova</author>
 
   <license>Apache 2.0</license>
+  
+  <url>http://www.ros.org/wiki/romeo_robot</url>
+  <url type="repository">https://github.com/ros-aldebaran/romeo_robot</url>
+  <url type="bugtracker">https://github.com/ros-aldebaran/romeo_robot/issues</url>
 
   <run_depend>naoqi_driver</run_depend>
   <run_depend>romeo_description</run_depend>
