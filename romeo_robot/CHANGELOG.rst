@@ -2,6 +2,9 @@
 Changelog for package romeo_robot
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.2 (2015-10-21)
 ------------------
 * fix dependency

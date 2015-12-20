@@ -2,6 +2,9 @@
 Changelog for package romeo_dcm_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.2 (2015-10-21)
 ------------------
 
