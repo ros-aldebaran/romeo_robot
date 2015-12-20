@@ -48,10 +48,10 @@ bool Romeo::initialize()
 {
 
     //Romeo Joints Initialization
-    const char* joint[] = { "NeckYaw",
+    const char* joint[] = { /*"NeckYaw",
                             "NeckPitch",
                             "HeadPitch",
-                            "HeadRoll",
+                            "HeadRoll",*/
                             "LShoulderPitch",
                             "LShoulderYaw",
                             "LElbowRoll",
@@ -60,7 +60,7 @@ bool Romeo::initialize()
                             "LWristYaw",
                             "LWristPitch",
                             "LHand",
-                            "TrunkYaw",
+                            /*"TrunkYaw",
                             "LHipYaw",
                             "LHipRoll",
                             "LHipPitch",
@@ -72,7 +72,7 @@ bool Romeo::initialize()
                             "RHipPitch",
                             "RKneePitch",
                             "RAnklePitch",
-                            "RAnkleRoll",
+                            "RAnkleRoll",*/
                             "RShoulderPitch",
                             "RShoulderYaw",
                             "RElbowRoll",

@@ -6,24 +6,22 @@
 
   <!-- Use CPP node by default for nao_sensors -->
   <arg name="force_python" default="true" />
-  <include file="$(find romeo_description)/launch/display_generated.launch" />
+  <include file="$(find romeo_description)/launch/romeo_desc_generated.launch" />
 
   <!-- nao driver works for pepper -->
   <include file="$(find naoqi_driver_py)/launch/naoqi_driver.launch">
     <arg name="nao_ip"    value="$(arg nao_ip)" />
   </include>
 
-  <include file="$(find romeo_sensors_py)/launch/sonar.launch" >
-    <arg name="nao_ip"    value="$(arg nao_ip)" />
-  </include>
-  <include file="$(find romeo_sensors_py)/launch/laser.launch" >
-    <arg name="nao_ip"    value="$(arg nao_ip)" />
-  </include>
-  <include file="$(find romeo_sensors_py)/launch/camera.launch" ns="romeo_robot/camera/depth" >
+  <include file="$(find romeo_sensors_py)/launch/cameras.launch" ns="romeo_robot" >
     <arg name="nao_ip"    value="$(arg nao_ip)" />
     <arg name="source"          value="2" />
     <arg name="color_space"     value="17" />
     <arg name="resolution"      value="1" />
+  </include>
+  <include file="$(find romeo_sensors_py)/launch/camera.launch" ns="romeo_robot/camera/bottom" >
+    <arg name="nao_ip"    value="$(arg nao_ip)" />
+    <arg name="source"          value="1" />
   </include>
   <include file="$(find romeo_sensors_py)/launch/camera.launch" ns="romeo_robot/camera/front" >
     <arg name="nao_ip"    value="$(arg nao_ip)" />

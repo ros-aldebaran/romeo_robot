@@ -6,15 +6,16 @@ project(romeo_sensors_py)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED)
 
+catkin_python_setup()
+
 catkin_package()
 
+catkin_install_python(PROGRAMS nodes/camera.py nodes/camera_depth.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+  
 # Instructions to install launch files
-install(DIRECTORY launch/
-    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
-)
-
-# install camera scripts
-install(DIRECTORY nodes/
-        DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+install(DIRECTORY launch
+    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+    FILES_MATCHING PATTERN "*.launch"
 )
 
