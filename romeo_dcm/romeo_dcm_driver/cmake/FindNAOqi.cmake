@@ -113,7 +113,7 @@ set(NAOqi_FOUND_COMPONENTS TRUE)
 if( ${NAOqi_NUMBER_OF_COMPONENTS}  )
     foreach(comp ${NAOqi_FILTERED_COMPONENTS})
         #Look for the actual library here
-        find_library(${comp}_LIBRARY NAMES ${comp} HINTS ${NAOqi_LIBRARY_HINTS})
+        find_library(${comp}_LIBRARY NAMES ${comp} HINTS ${NAOqi_LIBRARY_HINTS} NO_CMAKE_PATH NO_CMAKE_ENVIRONMENT_PATH)
         if ( ${${comp}_LIBRARY} STREQUAL ${comp}_LIBRARY-NOTFOUND)
             message(STATUS "Could not find NAOqi's ${comp}")
             set(NAOqi_FOUND_COMPONENTS FALSE)
