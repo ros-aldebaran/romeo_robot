@@ -12,6 +12,14 @@
         <parent link="HeadRoll_link"/>
         <child link="CameraDepth_frame"/>
         <origin rpy="2.0043951 0 1.57079632679" xyz="0.1403 -0.04708 0.14655"/>
+        <!-- <origin rpy="0.0 0.0 0.0" xyz="0.14 0.01 0.28"/>
+    </joint>
+    <link name="CameraDepth_depth_optical_frame"/>
+    <joint name="CameraDepth_depth_optical_frame_fixedjoint" type="fixed">
+        <parent link="CameraDepth_frame"/>
+        <child link="CameraDepth_depth_optical_frame"/>
+        <origin rpy="2.0043951 0 1.57079632679" xyz="0.1403 -0.04708 0.14655"/>
+        <origin rpy="-2.85 0.0 -1.57079632679" xyz="0 0 0"/> -->
     </joint>
 
     <link name="Cap">

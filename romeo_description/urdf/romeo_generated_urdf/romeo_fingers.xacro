@@ -55,7 +55,7 @@
 	<joint name="RFinger31" type="continuous">
 		<parent link="r_wrist"/>
 		<child link="RFinger31_link"/>
-		<origin rpy="1.69304 1.5708 3.14159" xyz="0.11215 -0.03024 0.00999"/>
+		<origin rpy="0.122247 0 -1.52578" xyz="-0.112486 0.0049332 -0.03024"/>
 		<axis xyz="0 0 1.0"/>
 		<mimic joint="RHand" multiplier="0.988205" offset="0"/>
 	</joint>
@@ -83,7 +83,7 @@
 	<joint name="LFinger21" type="continuous">
 		<parent link="l_wrist"/>
 		<child link="LFinger21_link"/>
-		<origin rpy="1.5708 1.5708 3.14159" xyz="0.12934 0 0.01499"/>
+		<origin rpy="0 0 -1.52578" xyz="-0.129884 0.00915459 0"/>
 		<axis xyz="0 0 1.0"/>
 		<mimic joint="LHand" multiplier="0.988205" offset="0"/>
 	</joint>
@@ -125,7 +125,7 @@
 	<joint name="LFinger11" type="continuous">
 		<parent link="l_wrist"/>
 		<child link="LFinger11_link"/>
-		<origin rpy="1.69304 1.5708 3.14159" xyz="0.12385 -0.03024 0.00999"/>
+		<origin rpy="0.122247 0 -1.52578" xyz="-0.124174 0.0044067 -0.03024"/>
 		<axis xyz="0 0 1.0"/>
 		<mimic joint="LHand" multiplier="0.988205" offset="0"/>
 	</joint>
@@ -167,7 +167,7 @@
 	<joint name="RFinger21" type="continuous">
 		<parent link="r_wrist"/>
 		<child link="RFinger21_link"/>
-		<origin rpy="1.5708 -1.5708 -3.14159" xyz="0.12934 0 0.01499"/>
+		<origin rpy="0 0 1.61581" xyz="-0.129884 0.00915459 0"/>
 		<axis xyz="0 0 1.0"/>
 		<mimic joint="RHand" multiplier="0.988205" offset="0"/>
 	</joint>
@@ -209,7 +209,7 @@
 	<joint name="RFinger11" type="continuous">
 		<parent link="r_wrist"/>
 		<child link="RFinger11_link"/>
-		<origin rpy="1.69304 -1.5708 3.14159" xyz="0.12385 0.03024 0.00999"/>
+		<origin rpy="0.122247 0 1.61581" xyz="-0.124174 0.0044067 0.03024"/>
 		<axis xyz="0 0 1.0"/>
 		<mimic joint="RHand" multiplier="0.988205" offset="0"/>
 	</joint>
@@ -237,7 +237,7 @@
 	<joint name="LFinger31" type="continuous">
 		<parent link="l_wrist"/>
 		<child link="LFinger31_link"/>
-		<origin rpy="1.69304 -1.5708 3.14159" xyz="0.11215 0.03024 0.00999"/>
+		<origin rpy="0.122247 0 1.61581" xyz="-0.112486 0.0049332 0.03024"/>
 		<axis xyz="0 0 1.0"/>
 		<mimic joint="LHand" multiplier="0.988205" offset="0"/>
 	</joint>
@@ -279,7 +279,7 @@
 	<joint name="LThumb1" type="continuous">
 		<parent link="l_wrist"/>
 		<child link="LThumb1_link"/>
-		<origin rpy="-2.97779 1.21665 -3.14159" xyz="0.0624 -0.03131 -0.00574"/>
+		<origin rpy="1.7346 0 -1.17164" xyz="-0.0620785 -0.00854215 -0.03131"/>
 		<axis xyz="0 0 1.0"/>
 		<mimic joint="LHand" multiplier="1.74533" offset="0"/>
 	</joint>
@@ -293,7 +293,7 @@
 	<joint name="RThumb1" type="continuous">
 		<parent link="r_wrist"/>
 		<child link="RThumb1_link"/>
-		<origin rpy="0.1638 -1.21665 0" xyz="0.0624 0.03131 -0.00574"/>
+		<origin rpy="1.7346 0 1.96995" xyz="-0.0620785 -0.00854215 0.03131"/>
 		<axis xyz="0 0 1.0"/>
 		<mimic joint="RHand" multiplier="1.74533" offset="0"/>
 	</joint>
