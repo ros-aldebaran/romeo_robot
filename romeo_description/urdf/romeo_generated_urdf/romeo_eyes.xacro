@@ -13,7 +13,7 @@
 	<link name="LEyeYaw_link">
 		<inertial>
 			<mass value="0.01"/>
-			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+			<inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09" />
 			<origin rpy="0 0 1.5708" xyz="0 0 0"/>
 		</inertial>
 	</link>
@@ -27,7 +27,7 @@
 	<link name="LEye">
 		<inertial>
 			<mass value="0.01"/>
-			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+			<inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09" />
 			<origin rpy="1.5708 0 -3.14159" xyz="0 0 0"/>
 		</inertial>
 		<xacro:insert_visu_LEye/>
@@ -42,7 +42,7 @@
 	<link name="REyeYaw_link">
 		<inertial>
 			<mass value="0.01"/>
-			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+			<inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09" />
 			<origin rpy="0 0 1.5708" xyz="0 0 0"/>
 		</inertial>
 	</link>
@@ -56,7 +56,7 @@
 	<link name="REye">
 		<inertial>
 			<mass value="0.01"/>
-			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+			<inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09" />
 			<origin rpy="1.5708 0 -3.14159" xyz="0 0 0"/>
 		</inertial>
 		<xacro:insert_visu_REye/>
