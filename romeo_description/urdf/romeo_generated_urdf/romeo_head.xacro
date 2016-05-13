@@ -6,58 +6,58 @@
 	<joint name="NeckYaw" type="revolute">
 		<parent link="torso"/>
 		<child link="NeckYaw_link"/>
-		<origin rpy="0 -2.98023e-08 0" xyz="0.0548 0 0.1675"/>
-		<axis xyz="0.173651 0 0.984807"/>
+		<origin rpy="0.174536 0 1.5708" xyz="0.0548 0 0.1675"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="7.324" lower="-2.0595" upper="2.0595" velocity="4.0"/>
 	</joint>
 	<link name="NeckYaw_link">
 		<inertial>
 			<mass value="0.377845"/>
 			<inertia ixx="0.000279258" ixy="-3.10908e-07" ixz="-1.49231e-05" iyy="0.000260188" iyz="-8.07538e-07" izz="8.41479e-05"/>
-			<origin rpy="0 0 0" xyz="-0.00635646 0 -0.030002"/>
+			<origin rpy="7.59054e-09 -0.174536 -1.5708" xyz="0 0.00105 -0.03065"/>
 		</inertial>
 	</link>
 	<joint name="NeckPitch" type="revolute">
 		<parent link="NeckYaw_link"/>
 		<child link="NeckPitch_link"/>
-		<origin rpy="0 -2.98023e-08 0" xyz="0 0 0"/>
-		<axis xyz="0 1.0 0"/>
+		<origin rpy="1.5708 0 1.5708" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="5.956" lower="-0.3142" upper="0.6632" velocity="2.2"/>
 	</joint>
 	<link name="NeckPitch_link">
 		<inertial>
 			<mass value="0.345282"/>
 			<inertia ixx="0.000476367" ixy="-1.93678e-06" ixz="0.000128915" iyy="0.000443007" iyz="5.81865e-05" izz="0.000304636"/>
-			<origin rpy="0 0 0" xyz="0.00372 0 0.04811"/>
+			<origin rpy="1.5708 0 2.96706" xyz="0.00469088 0.0480251 -2.10296e-09"/>
 		</inertial>
 		<xacro:insert_visu_NeckPitch_link/>
 	</link>
 	<joint name="HeadPitch" type="revolute">
 		<parent link="NeckPitch_link"/>
 		<child link="HeadPitch_link"/>
-		<origin rpy="0 0 0" xyz="0 0 0.0951"/>
-		<axis xyz="0 1.0 0"/>
+		<origin rpy="0 0 0" xyz="0.0165142 0.0936552 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="2.57" lower="-0.2571" upper="0.2971" velocity="1.9"/>
 	</joint>
 	<link name="HeadPitch_link">
 		<inertial>
 			<mass value="0.158407"/>
 			<inertia ixx="2.57346e-05" ixy="1.51196e-07" ixz="-1.52238e-05" iyy="7.43865e-05" iyz="-4.91562e-09" izz="6.6769e-05"/>
-			<origin rpy="0 0 0" xyz="0.0014 0 -0.00462"/>
+			<origin rpy="1.5708 0 2.96706" xyz="-0.002181 -0.0043067 0"/>
 		</inertial>
 	</link>
 	<joint name="HeadRoll" type="revolute">
 		<parent link="HeadPitch_link"/>
 		<child link="HeadRoll_link"/>
-		<origin rpy="0 0 0" xyz="0 0 0"/>
-		<axis xyz="1.0 0 0"/>
+		<origin rpy="1.5708 0 -1.74533" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="3.748" lower="-0.4887" upper="0.4887" velocity="1.5"/>
 	</joint>
 	<link name="HeadRoll_link">
 		<inertial>
 			<mass value="2.07047"/>
 			<inertia ixx="0.00933153" ixy="-3.87986e-05" ixz="0.002764" iyy="0.0110877" iyz="0.000300351" izz="0.00918888"/>
-			<origin rpy="0 0 0" xyz="0.01263 0 0.07498"/>
+			<origin rpy="3.14159 -1.5708 3.14159" xyz="-0.07498 0 0.01263"/>
 		</inertial>
 		<xacro:insert_visu_HeadRoll_link/>
 	</link>

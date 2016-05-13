@@ -6,58 +6,58 @@
 	<joint name="LEyeYaw" type="revolute">
 		<parent link="HeadRoll_link"/>
 		<child link="LEyeYaw_link"/>
-		<origin rpy="0 0 0" xyz="0.08948 0.03192 0.05425"/>
+		<origin rpy="1.5708 0 -1.5708" xyz="-0.05425 0.03192 0.08948"/>
 		<axis xyz="0 0 1.0"/>
 		<limit effort="0.01752" lower="-0.523599" upper="0.523599" velocity="293.215"/>
 	</joint>
 	<link name="LEyeYaw_link">
 		<inertial>
 			<mass value="0.01"/>
-			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
-			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09" />
+			<origin rpy="0 0 1.5708" xyz="0 0 0"/>
 		</inertial>
 	</link>
 	<joint name="LEyePitch" type="revolute">
 		<parent link="LEyeYaw_link"/>
 		<child link="LEye"/>
-		<origin rpy="0 0 0" xyz="0 0 0"/>
-		<axis xyz="0 1.0 0"/>
+		<origin rpy="1.5708 0 -1.5708" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="0.01752" lower="-0.349066" upper="0.349066" velocity="293.215"/>
 	</joint>
 	<link name="LEye">
 		<inertial>
 			<mass value="0.01"/>
-			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
-			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09" />
+			<origin rpy="1.5708 0 -3.14159" xyz="0 0 0"/>
 		</inertial>
 		<xacro:insert_visu_LEye/>
 	</link>
 	<joint name="REyeYaw" type="revolute">
 		<parent link="HeadRoll_link"/>
 		<child link="REyeYaw_link"/>
-		<origin rpy="0 0 0" xyz="0.08948 -0.03192 0.05425"/>
+		<origin rpy="1.5708 0 -1.5708" xyz="-0.05425 -0.03192 0.08948"/>
 		<axis xyz="0 0 1.0"/>
 		<limit effort="0.01752" lower="-0.523599" upper="0.523599" velocity="293.215"/>
 	</joint>
 	<link name="REyeYaw_link">
 		<inertial>
 			<mass value="0.01"/>
-			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
-			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09" />
+			<origin rpy="0 0 1.5708" xyz="0 0 0"/>
 		</inertial>
 	</link>
 	<joint name="REyePitch" type="revolute">
 		<parent link="REyeYaw_link"/>
 		<child link="REye"/>
-		<origin rpy="0 0 0" xyz="0 0 0"/>
-		<axis xyz="0 1.0 0"/>
+		<origin rpy="1.5708 0 -1.5708" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="0.01752" lower="-0.349066" upper="0.349066" velocity="293.215"/>
 	</joint>
 	<link name="REye">
 		<inertial>
 			<mass value="0.01"/>
-			<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
-			<origin rpy="0 0 0" xyz="0 0 0"/>
+			<inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09" />
+			<origin rpy="1.5708 0 -3.14159" xyz="0 0 0"/>
 		</inertial>
 		<xacro:insert_visu_REye/>
 	</link>

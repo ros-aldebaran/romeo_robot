@@ -20,80 +20,80 @@
 	<joint name="LHipRoll" type="revolute">
 		<parent link="LHipYaw_link"/>
 		<child link="LHip"/>
-		<origin rpy="0 0 0" xyz="0 0 0"/>
-		<axis xyz="1.0 0 0"/>
+		<origin rpy="1.5708 0 1.5708" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="46.6" lower="-0.2618" upper="0.5236" velocity="2.09"/>
 	</joint>
 	<link name="LHip">
 		<inertial>
 			<mass value="0.714778"/>
 			<inertia ixx="0.000937272" ixy="-6.73228e-06" ixz="-2.02714e-06" iyy="0.000548117" iyz="1.34974e-06" izz="0.00101855"/>
-			<origin rpy="0 0 0" xyz="0.00249 -0.00205 -0.00147"/>
+			<origin rpy="1.5708 -1.5708 -3.14159" xyz="-0.00205 -0.00147 0.00249"/>
 		</inertial>
 	</link>
 	<joint name="LHipPitch" type="revolute">
 		<parent link="LHip"/>
 		<child link="LThigh"/>
-		<origin rpy="0 0 0" xyz="0 0 0"/>
-		<axis xyz="0 1.0 0"/>
+		<origin rpy="1.5708 0 1.5708" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="46.6" lower="-1.6581" upper="0.4014" velocity="2.09"/>
 	</joint>
 	<link name="LThigh">
 		<inertial>
 			<mass value="4.71096"/>
 			<inertia ixx="0.0390706" ixy="-2.41786e-05" ixz="0.0250104" iyy="0.0395116" iyz="0.000712271" izz="0.0122599"/>
-			<origin rpy="0 0 0" xyz="-0.02138 -0.00255 -0.14577"/>
+			<origin rpy="1.5708 0 1.5708" xyz="-0.14577 -0.02138 -0.00254999"/>
 		</inertial>
 		<xacro:insert_visu_LThigh/>
 	</link>
 	<joint name="LKneePitch" type="revolute">
 		<parent link="LThigh"/>
 		<child link="LTibia"/>
-		<origin rpy="0 0 0" xyz="0 0 -0.322"/>
-		<axis xyz="0 1.0 0"/>
+		<origin rpy="0 0 0" xyz="-0.322 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="38.17" lower="-0.0218" upper="1.9722" velocity="6.0"/>
 	</joint>
 	<link name="LTibia">
 		<inertial>
 			<mass value="2.72291"/>
 			<inertia ixx="0.0159124" ixy="5.49385e-08" ixz="0.00301963" iyy="0.0158076" iyz="-6.1473e-06" izz="0.00369233"/>
-			<origin rpy="0 0 0" xyz="-0.00415 -0.00054 -0.11011"/>
+			<origin rpy="1.5708 0 1.5708" xyz="-0.11011 -0.00415 -0.000539995"/>
 		</inertial>
 		<xacro:insert_visu_LTibia/>
 	</link>
 	<joint name="LAnklePitch" type="revolute">
 		<parent link="LTibia"/>
 		<child link="LAnklePitch_link"/>
-		<origin rpy="0 0 0" xyz="0 0 -0.29"/>
-		<axis xyz="0 1.0 0"/>
+		<origin rpy="0 0 0" xyz="-0.29 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="25.76" lower="-0.5149" upper="0.7505" velocity="2.1"/>
 	</joint>
 	<link name="LAnklePitch_link">
 		<inertial>
 			<mass value="0.464512"/>
 			<inertia ixx="0.000367336" ixy="-1.174e-07" ixz="1.0441e-07" iyy="0.000239298" iyz="-1.23189e-06" izz="0.000425531"/>
-			<origin rpy="0 0 0" xyz="0.00132 -0.00117 0.00015"/>
+			<origin rpy="1.5708 0 1.5708" xyz="0.00015 0.00132 -0.00117"/>
 		</inertial>
 	</link>
 	<joint name="LAnkleRoll" type="revolute">
 		<parent link="LAnklePitch_link"/>
 		<child link="l_ankle"/>
-		<origin rpy="0 0 0" xyz="0 0 0"/>
-		<axis xyz="1.0 0 0"/>
+		<origin rpy="1.5708 0 -3.14159" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="25.76" lower="-0.3491" upper="0.3491" velocity="2.1"/>
 	</joint>
 	<link name="l_ankle">
 		<inertial>
 			<mass value="1.06764"/>
 			<inertia ixx="0.000978167" ixy="-4.97135e-05" ixz="-0.000879138" iyy="0.00586633" iyz="6.13291e-05" izz="0.00589599"/>
-			<origin rpy="0 0 0" xyz="0.0483878 0.00120158 -0.0367645"/>
+			<origin rpy="3.14159 -1.5708 3.14159" xyz="0.0367645 0.00120158 0.0483878"/>
 		</inertial>
 		<xacro:insert_visu_l_ankle/>
 	</link>
 	<joint name="LLeg_effector_fixedjoint" type="fixed">
 		<parent link="l_ankle"/>
 		<child link="l_sole"/>
-		<origin rpy="0 0 0" xyz="0 0 -0.0651"/>
+		<origin rpy="3.14159 -1.5708 3.14159" xyz="0.0651 0 0"/>
 		<axis xyz="0 0 0"/>
 	</joint>
 	<link name="l_sole"/>
@@ -114,80 +114,80 @@
 	<joint name="RHipRoll" type="revolute">
 		<parent link="RHipYaw_link"/>
 		<child link="RHip"/>
-		<origin rpy="0 0 0" xyz="0 0 0"/>
-		<axis xyz="1.0 0 0"/>
+		<origin rpy="1.5708 0 1.5708" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="46.6" lower="-0.5236" upper="0.2618" velocity="2.09"/>
 	</joint>
 	<link name="RHip">
 		<inertial>
 			<mass value="0.714778"/>
 			<inertia ixx="0.000937272" ixy="5.64884e-07" ixz="-2.02714e-06" iyy="0.000548117" iyz="-2.95823e-06" izz="0.00101855"/>
-			<origin rpy="0 0 0" xyz="0.00249 0.00205 -0.00147"/>
+			<origin rpy="1.5708 -1.5708 -3.14159" xyz="0.00205 -0.00147 0.00249"/>
 		</inertial>
 	</link>
 	<joint name="RHipPitch" type="revolute">
 		<parent link="RHip"/>
 		<child link="RThigh"/>
-		<origin rpy="0 0 0" xyz="0 0 0"/>
-		<axis xyz="0 1.0 0"/>
+		<origin rpy="1.5708 0 1.5708" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="46.6" lower="-1.6581" upper="0.4014" velocity="2.09"/>
 	</joint>
 	<link name="RThigh">
 		<inertial>
 			<mass value="4.71096"/>
 			<inertia ixx="0.0390706" ixy="-0.000537853" ixz="0.0250104" iyy="0.0395116" iyz="-0.00278999" izz="0.0122599"/>
-			<origin rpy="0 0 0" xyz="-0.02138 0.00255 -0.14577"/>
+			<origin rpy="1.5708 0 1.5708" xyz="-0.14577 -0.02138 0.00255001"/>
 		</inertial>
 		<xacro:insert_visu_RThigh/>
 	</link>
 	<joint name="RKneePitch" type="revolute">
 		<parent link="RThigh"/>
 		<child link="RTibia"/>
-		<origin rpy="0 0 0" xyz="0 0 -0.322"/>
-		<axis xyz="0 1.0 0"/>
+		<origin rpy="0 0 0" xyz="-0.322 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="38.17" lower="-0.0218" upper="1.9722" velocity="6.0"/>
 	</joint>
 	<link name="RTibia">
 		<inertial>
 			<mass value="2.72291"/>
 			<inertia ixx="0.0159124" ixy="-1.21492e-05" ixz="0.00301963" iyy="0.0158076" iyz="-0.000329953" izz="0.00369233"/>
-			<origin rpy="0 0 0" xyz="-0.00415 0.00054 -0.11011"/>
+			<origin rpy="1.5708 0 1.5708" xyz="-0.11011 -0.00415 0.000540005"/>
 		</inertial>
 		<xacro:insert_visu_RTibia/>
 	</link>
 	<joint name="RAnklePitch" type="revolute">
 		<parent link="RTibia"/>
 		<child link="RAnklePitch_link"/>
-		<origin rpy="0 0 0" xyz="0 0 -0.29"/>
-		<axis xyz="0 1.0 0"/>
+		<origin rpy="0 0 0" xyz="-0.29 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="25.76" lower="-0.5149" upper="0.7505" velocity="2.1"/>
 	</joint>
 	<link name="RAnklePitch_link">
 		<inertial>
 			<mass value="0.464512"/>
 			<inertia ixx="0.000367336" ixy="1.31739e-06" ixz="1.0441e-07" iyy="0.000239298" iyz="-1.06885e-06" izz="0.000425531"/>
-			<origin rpy="0 0 0" xyz="0.00132 0.00117 0.00015"/>
+			<origin rpy="1.5708 0 1.5708" xyz="0.00015 0.00132 0.00117"/>
 		</inertial>
 	</link>
 	<joint name="RAnkleRoll" type="revolute">
 		<parent link="RAnklePitch_link"/>
 		<child link="r_ankle"/>
-		<origin rpy="0 0 0" xyz="0 0 0"/>
-		<axis xyz="1.0 0 0"/>
+		<origin rpy="1.5708 0 -3.14159" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="25.76" lower="-0.3491" upper="0.3491" velocity="2.1"/>
 	</joint>
 	<link name="r_ankle">
 		<inertial>
 			<mass value="1.06764"/>
 			<inertia ixx="0.000978167" ixy="-0.000173863" ixz="-0.000879138" iyy="0.00586633" iyz="0.000155656" izz="0.00589599"/>
-			<origin rpy="0 0 0" xyz="0.0483878 -0.00120158 -0.0367645"/>
+			<origin rpy="3.14159 -1.5708 3.14159" xyz="0.0367645 -0.00120158 0.0483878"/>
 		</inertial>
 		<xacro:insert_visu_r_ankle/>
 	</link>
 	<joint name="RLeg_effector_fixedjoint" type="fixed">
 		<parent link="r_ankle"/>
 		<child link="r_sole"/>
-		<origin rpy="0 0 0" xyz="0 0 -0.0651"/>
+		<origin rpy="3.14159 -1.5708 3.14159" xyz="0.0651 0 0"/>
 		<axis xyz="0 0 0"/>
 	</joint>
 	<link name="r_sole"/>
