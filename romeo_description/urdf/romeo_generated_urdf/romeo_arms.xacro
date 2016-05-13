@@ -6,110 +6,110 @@
 	<joint name="LShoulderPitch" type="revolute">
 		<parent link="torso"/>
 		<child link="LShoulder"/>
-		<origin rpy="1.49012e-08 7.45058e-09 0" xyz="0.049862 0.19 0.073851"/>
-		<axis xyz="0.417025 0.895055 -0.15801"/>
+		<origin rpy="1.72947 0 2.70558" xyz="0.049862 0.19 0.073851"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="19.095" lower="-1.3491" upper="2.2462" velocity="2.2"/>
 	</joint>
 	<link name="LShoulder">
 		<inertial>
 			<mass value="0.541429"/>
 			<inertia ixx="0.00033428" ixy="-9.92972e-05" ixz="9.98217e-06" iyy="0.000188073" iyz="2.14339e-05" izz="0.000360929"/>
-			<origin rpy="0 0 0" xyz="-0.0112798 -0.0260712 0.00468882"/>
+			<origin rpy="1.74553 -0.43017 3.0681" xyz="-0.000786143 0.0001431 -0.02878"/>
 		</inertial>
 	</link>
 	<joint name="LShoulderYaw" type="revolute">
 		<parent link="LShoulder"/>
 		<child link="LShoulderYaw_link"/>
-		<origin rpy="2.98023e-08 1.11759e-08 -5.58793e-08" xyz="0 0 0"/>
-		<axis xyz="0.0401398 0.155542 0.987013"/>
+		<origin rpy="1.5708 2.04891e-08 3.11228" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="9.031" lower="-0.5768" upper="0.9242" velocity="4.0"/>
 	</joint>
 	<link name="LShoulderYaw_link">
 		<inertial>
 			<mass value="0.861545"/>
 			<inertia ixx="0.00118557" ixy="0.000596133" ixz="0.0011173" iyy="0.00312162" iyz="-2.05919e-05" izz="0.00289955"/>
-			<origin rpy="0 0 0" xyz="0.0965281 0.00465308 0.00168775"/>
+			<origin rpy="0.156303 -0.0401506 0.43054" xyz="0.0857524 0.0441528 0.0062642"/>
 		</inertial>
 		<xacro:insert_visu_LShoulderYaw_link/>
 	</link>
 	<joint name="LElbowRoll" type="revolute">
 		<parent link="LShoulderYaw_link"/>
 		<child link="LForeArm"/>
-		<origin rpy="-2.56114e-09 0 -9.31322e-09" xyz="0.210824 7.40511e-09 -0.008631"/>
-		<axis xyz="0.998889 0.0139984 0.044995"/>
+		<origin rpy="1.484 0 2.00819" xyz="0.19118 0.0892828 -5.64754e-05"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="7.404" lower="-2.2148" upper="1.9042" velocity="3.7"/>
 	</joint>
 	<link name="LForeArm">
 		<inertial>
 			<mass value="0.600439"/>
 			<inertia ixx="0.000207598" ixy="1.2053e-05" ixz="-1.86312e-05" iyy="0.000507683" iyz="1.56171e-06" izz="0.000456309"/>
-			<origin rpy="0 0 0" xyz="-0.0348859 -0.0011589 -0.00148134"/>
+			<origin rpy="0.301619 -1.52366 -1.71655" xyz="-0.000675854 -1.48873e-05 -0.03493"/>
 		</inertial>
 	</link>
 	<joint name="LElbowYaw" type="revolute">
 		<parent link="LForeArm"/>
 		<child link="LElbow"/>
-		<origin rpy="-1.49504e-08 -1.86264e-08 2.12577e-09" xyz="0 0 0"/>
-		<axis xyz="-0.0449994 0 0.998987"/>
+		<origin rpy="1.5708 0 -2.98604" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="6.02" lower="-1.5228" upper="0.0044" velocity="4.0"/>
 	</joint>
 	<link name="LElbow">
 		<inertial>
 			<mass value="0.460203"/>
 			<inertia ixx="0.000503576" ixy="0.000585803" ixz="3.19975e-05" iyy="0.00127777" iyz="3.67296e-05" izz="0.00122813"/>
-			<origin rpy="0 0 0" xyz="0.068523 0.0097 0.00458766"/>
+			<origin rpy="-1.68802e-09 0.0450146 1.5568" xyz="-0.00873791 0.0687891 0.00149952"/>
 		</inertial>
 		<xacro:insert_visu_LElbow/>
 	</link>
 	<joint name="LWristRoll" type="revolute">
 		<parent link="LElbow"/>
 		<child link="LWristRoll_link"/>
-		<origin rpy="0 -7.45058e-09 0" xyz="0.190404 0 0.008631"/>
-		<axis xyz="0.998987 0 0.0449994"/>
+		<origin rpy="1.5708 0 3.12759" xyz="0.0026681 0.190581 5.41843e-05"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="2.177" lower="-3.6303" upper="0.4887" velocity="1.1"/>
 	</joint>
 	<link name="LWristRoll_link">
 		<inertial>
 			<mass value="0.218316"/>
 			<inertia ixx="0.000100812" ixy="-1.81881e-06" ixz="-4.56681e-05" iyy="0.000384336" iyz="-1.11019e-07" izz="0.000366084"/>
-			<origin rpy="0 0 0" xyz="-0.0592449 6e-05 -0.00144745"/>
+			<origin rpy="4.36671e-08 -1.52578 -1.5708" xyz="6.00001e-05 0.00122 -0.05925"/>
 		</inertial>
 		<xacro:insert_visu_LWristRoll_link/>
 	</link>
 	<joint name="LWristYaw" type="revolute">
 		<parent link="LWristRoll_link"/>
 		<child link="LWristYaw_link"/>
-		<origin rpy="0 0 0" xyz="0 0 0"/>
-		<axis xyz="-0.0449994 0 0.998987"/>
+		<origin rpy="1.5708 0 -3.14159" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="0.862" lower="-0.4014" upper="0.4014" velocity="2.26"/>
 	</joint>
 	<link name="LWristYaw_link">
 		<inertial>
 			<mass value="0.0758774"/>
 			<inertia ixx="1.55687e-05" ixy="-5.1829e-08" ixz="-8.72923e-07" iyy="3.52487e-05" iyz="1.94513e-08" izz="3.4791e-05"/>
-			<origin rpy="0 0 0" xyz="-0.00657144 0.00017 -0.000115829"/>
+			<origin rpy="1.96699e-09 0.0450146 1.5708" xyz="-0.00017 -0.00657 0.00018"/>
 		</inertial>
 		<xacro:insert_visu_LWristYaw_link/>
 	</link>
 	<joint name="LWristPitch" type="revolute">
 		<parent link="LWristYaw_link"/>
 		<child link="l_wrist"/>
-		<origin rpy="0 0 0" xyz="0 0 0"/>
-		<axis xyz="0 1.0 0"/>
+		<origin rpy="1.5708 0 -1.5708" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="0.6" lower="-0.988" upper="0.8969" velocity="3.75"/>
 	</joint>
 	<link name="l_wrist">
 		<inertial>
 			<mass value="0.442191"/>
 			<inertia ixx="0.000404603" ixy="-0.000404247" ixz="1.89685e-05" iyy="0.000829354" iyz="7.81042e-05" izz="0.00102014"/>
-			<origin rpy="0 0 0" xyz="0.07358 -0.00628 -0.00098"/>
+			<origin rpy="1.5708 0 -3.09658" xyz="-0.0734614 -0.00429006 -0.00628"/>
 		</inertial>
 		<xacro:insert_visu_l_wrist/>
 	</link>
 	<joint name="LHand" type="revolute">
 		<parent link="l_wrist"/>
 		<child link="l_gripper"/>
-		<origin rpy="1.5708 0.0450146 -3.14159" xyz="-0.0579412 -0.0159 -0.00260997"/>
+		<origin rpy="0 0 0" xyz="0.058 0 -0.0159"/>
 		<axis xyz="1.0 0 0"/>
 		<limit effort="0.649997" lower="0" upper="1.0" velocity="59.8925"/>
 	</joint>
@@ -122,110 +122,110 @@
 	<joint name="RShoulderPitch" type="revolute">
 		<parent link="torso"/>
 		<child link="RShoulder"/>
-		<origin rpy="-1.49012e-08 7.45058e-09 0" xyz="0.049862 -0.19 0.073851"/>
-		<axis xyz="-0.417025 0.895055 0.15801"/>
+		<origin rpy="1.41212 0 -2.70558" xyz="0.049862 -0.19 0.073851"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="19.095" lower="-1.4554" upper="2.1399" velocity="2.2"/>
 	</joint>
 	<link name="RShoulder">
 		<inertial>
 			<mass value="0.541429"/>
 			<inertia ixx="0.00032868" ixy="0.000102539" ixz="1.9336e-05" iyy="0.000199958" iyz="-3.81835e-05" izz="0.000354645"/>
-			<origin rpy="0 0 0" xyz="-0.0112798 0.0260712 0.00468882"/>
+			<origin rpy="1.39606 0.43017 3.0681" xyz="-0.000786143 0.000143099 0.02878"/>
 		</inertial>
 	</link>
 	<joint name="RShoulderYaw" type="revolute">
 		<parent link="RShoulder"/>
 		<child link="RShoulderYaw_link"/>
-		<origin rpy="-2.98023e-08 1.49012e-08 -6.42613e-08" xyz="0 0 0"/>
-		<axis xyz="0.0401398 -0.155542 0.987014"/>
+		<origin rpy="1.5708 1.07102e-08 3.11228" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="9.031" lower="-1.0985" upper="0.4025" velocity="4.0"/>
 	</joint>
 	<link name="RShoulderYaw_link">
 		<inertial>
 			<mass value="0.861545"/>
 			<inertia ixx="0.00118857" ixy="-0.00036285" ixz="0.001154" iyy="0.00311916" iyz="1.86519e-05" izz="0.002899"/>
-			<origin rpy="0 0 0" xyz="0.0965281 -0.00465308 0.00168775"/>
+			<origin rpy="-0.156303 -0.0401506 -0.43054" xyz="0.0857524 -0.0441528 0.0062642"/>
 		</inertial>
 		<xacro:insert_visu_RShoulderYaw_link/>
 	</link>
 	<joint name="RElbowRoll" type="revolute">
 		<parent link="RShoulderYaw_link"/>
 		<child link="RForeArm"/>
-		<origin rpy="6.69388e-09 7.45058e-09 -7.91624e-08" xyz="0.210824 -1.48548e-08 -0.008631"/>
-		<axis xyz="0.998889 -0.0139984 0.044995"/>
+		<origin rpy="1.484 1.49012e-08 1.13341" xyz="0.19118 -0.0892828 -5.64754e-05"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="7.404" lower="-1.9047" upper="2.2143" velocity="3.7"/>
 	</joint>
 	<link name="RForeArm">
 		<inertial>
 			<mass value="0.600439"/>
 			<inertia ixx="0.000207722" ixy="-7.62167e-06" ixz="-1.85932e-05" iyy="0.000507556" iyz="9.54211e-07" izz="0.000456313"/>
-			<origin rpy="0 0 0" xyz="-0.0348859 0.0011589 -0.00148134"/>
+			<origin rpy="-0.301619 -1.52366 -1.42505" xyz="0.000675854 -1.48873e-05 -0.03493"/>
 		</inertial>
 	</link>
 	<joint name="RElbowYaw" type="revolute">
 		<parent link="RForeArm"/>
 		<child link="RElbow"/>
-		<origin rpy="1.49504e-08 -1.86264e-08 -2.12577e-09" xyz="0 0 0"/>
-		<axis xyz="-0.0449994 0 0.998987"/>
+		<origin rpy="1.5708 0 2.98604" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="6.02" lower="-0.0047" upper="1.5225" velocity="4.0"/>
 	</joint>
 	<link name="RElbow">
 		<inertial>
 			<mass value="0.460203"/>
 			<inertia ixx="0.000503576" ixy="-2.59661e-05" ixz="3.19975e-05" iyy="0.00127777" iyz="-4.2287e-06" izz="0.00122813"/>
-			<origin rpy="0 0 0" xyz="0.068523 -0.0097 0.00458766"/>
+			<origin rpy="0 0.0450146 1.5848" xyz="0.00873792 0.0687891 0.00149952"/>
 		</inertial>
 		<xacro:insert_visu_RElbow/>
 	</link>
 	<joint name="RWristRoll" type="revolute">
 		<parent link="RElbow"/>
 		<child link="RWristRoll_link"/>
-		<origin rpy="0 -7.45058e-09 0" xyz="0.190404 0 0.008631"/>
-		<axis xyz="0.998987 0 0.0449994"/>
+		<origin rpy="1.5708 0 -3.12759" xyz="-0.0026681 0.190581 5.41843e-05"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="2.177" lower="-0.4887" upper="3.6303" velocity="1.1"/>
 	</joint>
 	<link name="RWristRoll_link">
 		<inertial>
 			<mass value="0.218316"/>
 			<inertia ixx="0.000100812" ixy="-2.66721e-07" ixz="-4.56681e-05" iyy="0.000384336" iyz="-7.30984e-08" izz="0.000366084"/>
-			<origin rpy="0 0 0" xyz="-0.0592449 -6e-05 -0.00144745"/>
+			<origin rpy="4.36671e-08 -1.52578 -1.5708" xyz="-5.99999e-05 0.00122 -0.05925"/>
 		</inertial>
 		<xacro:insert_visu_RWristRoll_link/>
 	</link>
 	<joint name="RWristYaw" type="revolute">
 		<parent link="RWristRoll_link"/>
 		<child link="RWristYaw_link"/>
-		<origin rpy="0 0 0" xyz="0 0 0"/>
-		<axis xyz="-0.0449994 0 0.998987"/>
+		<origin rpy="1.5708 0 -3.14159" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="0.862" lower="-0.4014" upper="0.4014" velocity="2.26"/>
 	</joint>
 	<link name="RWristYaw_link">
 		<inertial>
 			<mass value="0.0758774"/>
 			<inertia ixx="1.55687e-05" ixy="1.17703e-07" ixz="-8.72923e-07" iyy="3.52487e-05" iyz="2.24395e-08" izz="3.4791e-05"/>
-			<origin rpy="0 0 0" xyz="-0.00657144 -0.00017 -0.000115829"/>
+			<origin rpy="1.96699e-09 0.0450146 1.5708" xyz="0.00017 -0.00657 0.00018"/>
 		</inertial>
 		<xacro:insert_visu_RWristYaw_link/>
 	</link>
 	<joint name="RWristPitch" type="revolute">
 		<parent link="RWristYaw_link"/>
 		<child link="r_wrist"/>
-		<origin rpy="0 0 0" xyz="0 0 0"/>
-		<axis xyz="0 1.0 0"/>
+		<origin rpy="1.5708 0 -1.5708" xyz="0 0 0"/>
+		<axis xyz="0 0 1.0"/>
 		<limit effort="0.6" lower="-0.9868" upper="0.8981" velocity="3.75"/>
 	</joint>
 	<link name="r_wrist">
 		<inertial>
 			<mass value="0.442191"/>
 			<inertia ixx="0.000404603" ixy="4.4107e-06" ixz="1.89685e-05" iyy="0.000829354" iyz="7.26613e-05" izz="0.00102014"/>
-			<origin rpy="0 0 0" xyz="0.07358 0.00628 -0.00098"/>
+			<origin rpy="1.5708 0 -3.09658" xyz="-0.0734614 -0.00429006 0.00628"/>
 		</inertial>
 		<xacro:insert_visu_r_wrist/>
 	</link>
 	<joint name="RHand" type="revolute">
 		<parent link="r_wrist"/>
 		<child link="r_gripper"/>
-		<origin rpy="1.5708 0.0450146 -3.14159" xyz="-0.0579412 -0.0159 -0.00260997"/>
+		<origin rpy="0 0 0" xyz="0.058 0 -0.0159"/>
 		<axis xyz="1.0 0 0"/>
 		<limit effort="0.649997" lower="0" upper="1.0" velocity="59.8925"/>
 	</joint>
