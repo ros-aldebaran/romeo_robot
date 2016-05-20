@@ -2,6 +2,11 @@
 Changelog for package romeo_dcm_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fixed packages.xml
+* Contributors: Mikael Arguedas
+
 0.1.3 (2015-12-20)
 ------------------
 

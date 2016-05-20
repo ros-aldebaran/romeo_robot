@@ -2,6 +2,9 @@
 Changelog for package romeo_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.3 (2015-12-20)
 ------------------
 * fixing romeo_bringup launch and romeo_sensors_py to get data from all cameras

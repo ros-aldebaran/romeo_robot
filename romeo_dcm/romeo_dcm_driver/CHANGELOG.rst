@@ -2,6 +2,12 @@
 Changelog for package romeo_dcm_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fixed packages.xml
+* Do not search naoqi libraries in ROS paths, go directly in SDK path
+* Contributors: Mikael Arguedas, nlyubova
+
 0.1.3 (2015-12-20)
 ------------------
 * excluding torso controller for a moment
