@@ -21,7 +21,7 @@ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISE
 <package>
   <name>romeo_dcm_bringup</name>
   <version>0.1.3</version>
-  <description>Bring-up the romeo_dcm driver to connect to Aldebaran's Nao robot (v4).</description>
+  <description>Bring-up the romeo_dcm driver to connect to Aldebaran's Romeo2 robot.</description>
 
   <maintainer email="hris2003@gmail.com">Ha Dang</maintainer>
 
