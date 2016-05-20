@@ -2,8 +2,8 @@
 Changelog for package romeo_robot
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.4 (2016-05-20)
+------------------
 * added missing metapackage dependency
 * Contributors: Mikael Arguedas
 

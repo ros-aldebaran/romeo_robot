@@ -2,8 +2,8 @@
 Changelog for package romeo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.4 (2016-05-20)
+------------------
 * fixed packages.xml
 * Contributors: Mikael Arguedas
 

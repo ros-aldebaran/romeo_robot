@@ -2,8 +2,8 @@
 Changelog for package romeo_dcm_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.4 (2016-05-20)
+------------------
 * fixed packages.xml
 * Do not search naoqi libraries in ROS paths, go directly in SDK path
 * Contributors: Mikael Arguedas, nlyubova
