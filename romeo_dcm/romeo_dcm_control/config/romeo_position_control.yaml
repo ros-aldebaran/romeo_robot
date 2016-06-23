@@ -37,9 +37,9 @@ romeo_dcm:
     type: position_controllers/JointPositionController
     joint: LHand
 
-  LShoulderRoll_position_controller:
+  LShoulderYaw_position_controller:
     type: position_controllers/JointPositionController
-    joint: LShoulderRoll
+    joint: LShoulderYaw
 
   LElbowRoll_position_controller:
     type: position_controllers/JointPositionController
@@ -61,17 +61,17 @@ romeo_dcm:
     type: position_controllers/JointPositionController
     joint: RHand
 
-  RShoulderRoll_position_controller:
+  RShoulderYaw_position_controller:
     type: position_controllers/JointPositionController
-    joint: RShoulderRoll
+    joint: RShoulderYaw
 
   RElbowRoll_position_controller:
     type: position_controllers/JointPositionController
     joint: RElbowRoll
 
-  LHipYawPitch_position_controller:
+  LHipYaw_position_controller:
     type: position_controllers/JointPositionController
-    joint: LHipYawPitch
+    joint: LHipYaw
 
   LHipRoll_position_controller:
     type: position_controllers/JointPositionController
@@ -93,9 +93,9 @@ romeo_dcm:
     type: position_controllers/JointPositionController
     joint: LAnkleRoll
 
-  RHipYawPitch_position_controller:
+  RHipYaw_position_controller:
     type: position_controllers/JointPositionController
-    joint: RHipYawPitch
+    joint: RHipYaw
 
   RHipRoll_position_controller:
     type: position_controllers/JointPositionController
