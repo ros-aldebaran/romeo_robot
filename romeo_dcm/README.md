@@ -21,5 +21,5 @@ roslaunch romeo_dcm_bringup romeo_dcm_bringup_remote.launch
 Wait until romeo_dcm_bringup node is ready, then run:
 
 ``
-roslaunch romeo_moveit_config moveit_planner_romeo.launch
+roslaunch romeo_moveit_config moveit_planner.launch
 ``
