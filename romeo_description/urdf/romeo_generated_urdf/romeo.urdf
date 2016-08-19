@@ -751,8 +751,8 @@
   <link name="LEyeYaw_link">
     <inertial>
       <mass value="0.01"/>
-      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+      <origin rpy="0 -0 1.5708" xyz="0 0 0"/>
     </inertial>
   </link>
   <joint name="LEyePitch" type="revolute">
@@ -765,8 +765,8 @@
   <link name="LEye">
     <inertial>
       <mass value="0.01"/>
-      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+      <origin rpy="1.5708 -0 -3.14159" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
@@ -791,8 +791,8 @@
   <link name="REyeYaw_link">
     <inertial>
       <mass value="0.01"/>
-      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+      <origin rpy="0 -0 1.5708" xyz="0 0 0"/>
     </inertial>
   </link>
   <joint name="REyePitch" type="revolute">
@@ -805,8 +805,8 @@
   <link name="REye">
     <inertial>
       <mass value="0.01"/>
-      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+      <origin rpy="1.5708 -0 -3.14159" xyz="0 0 0"/>
     </inertial>
     <visual>
       <geometry>
@@ -1813,4 +1813,988 @@
     <child link="Cap"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
+  <!-- MACROS FOR DISABLE LINKS -->
+  <!-- MACROS FOR MIMIC JOINTS -->
+  <!-- Fingers -->
+  <!-- Thumbs -->
+  <!-- GAZEBO ROS CONTROL AND IMU PLUGIN -->
+  <gazebo>
+    <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
+      <robotNamespace/>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_LFinger11">
+      <joint>LHand</joint>
+      <mimicJoint>LFinger11</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_LFinger12">
+      <joint>LHand</joint>
+      <mimicJoint>LFinger12</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_LFinger13">
+      <joint>LHand</joint>
+      <mimicJoint>LFinger13</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_LFinger21">
+      <joint>LHand</joint>
+      <mimicJoint>LFinger21</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_LFinger22">
+      <joint>LHand</joint>
+      <mimicJoint>LFinger22</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_LFinger23">
+      <joint>LHand</joint>
+      <mimicJoint>LFinger23</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_LFinger31">
+      <joint>LHand</joint>
+      <mimicJoint>LFinger31</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_LFinger32">
+      <joint>LHand</joint>
+      <mimicJoint>LFinger32</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_LFinger33">
+      <joint>LHand</joint>
+      <mimicJoint>LFinger33</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_RFinger11">
+      <joint>RHand</joint>
+      <mimicJoint>RFinger11</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_RFinger12">
+      <joint>RHand</joint>
+      <mimicJoint>RFinger12</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_RFinger13">
+      <joint>RHand</joint>
+      <mimicJoint>RFinger13</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_RFinger21">
+      <joint>RHand</joint>
+      <mimicJoint>RFinger21</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_RFinger22">
+      <joint>RHand</joint>
+      <mimicJoint>RFinger22</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_RFinger23">
+      <joint>RHand</joint>
+      <mimicJoint>RFinger23</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_RFinger31">
+      <joint>RHand</joint>
+      <mimicJoint>RFinger31</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_RFinger32">
+      <joint>RHand</joint>
+      <mimicJoint>RFinger32</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_RFinger33">
+      <joint>RHand</joint>
+      <mimicJoint>RFinger33</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="LThumb1">
+      <joint>LHand</joint>
+      <mimicJoint>LThumb1</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="LThumb2">
+      <joint>LHand</joint>
+      <mimicJoint>LThumb2</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="RThumb1">
+      <joint>RHand</joint>
+      <mimicJoint>RThumb1</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="RThumb2">
+      <joint>RHand</joint>
+      <mimicJoint>RThumb2</mimicJoint>
+      <multiplier>-0.785398163398</multiplier>
+      <offset>0.785398163398</offset>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="LFinger11_link">
+      <link>LFinger11_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="LFinger12_link">
+      <link>LFinger12_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="LFinger13_link">
+      <link>LFinger13_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="LFinger21_link">
+      <link>LFinger21_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="LFinger22_link">
+      <link>LFinger22_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="LFinger23_link">
+      <link>LFinger23_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="LFinger31_link">
+      <link>LFinger31_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="LFinger32_link">
+      <link>LFinger32_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="LFinger33_link">
+      <link>LFinger33_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="LThumb1_link">
+      <link>LThumb1_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="LThumb2_link">
+      <link>LThumb2_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="l_gripper">
+      <link>l_gripper</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="RFinger11_link">
+      <link>RFinger11_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="RFinger12_link">
+      <link>RFinger12_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="RFinger13_link">
+      <link>RFinger13_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="RFinger21_link">
+      <link>RFinger21_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="RFinger22_link">
+      <link>RFinger22_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="RFinger23_link">
+      <link>RFinger23_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="RFinger31_link">
+      <link>RFinger31_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="RFinger32_link">
+      <link>RFinger32_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="RFinger33_link">
+      <link>RFinger33_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="RThumb1_link">
+      <link>RThumb1_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="RThumb2_link">
+      <link>RThumb2_link</link>
+    </plugin>
+    <plugin filename="libroboticsgroup_gazebo_disable_link_plugin.so" name="r_gripper">
+      <link>r_gripper</link>
+    </plugin>
+  </gazebo>
+  <!-- END OF GAZEBO ROS CONTROL PLUGIN -->
+  <!-- GAZEBO MATERIALS -->
+  <gazebo reference="torso">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="body">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="Neck">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="Head">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="gaze">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <!-- ARMS -->
+  <gazebo reference="LShoulder">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LShoulderYaw_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LForeArm">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LElbow">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LWristRoll_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LWristYaw_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="l_wrist">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="l_gripper">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RShoulder">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RShoulderYaw_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RForeArm">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RElbow">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RWristRoll_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RWristYaw_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="r_wrist">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="r_gripper">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LFinger11_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LFinger12_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LFinger13_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LFinger21_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LFinger22_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LFinger23_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LFinger31_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LFinger32_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LFinger33_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LThumb1_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LThumb2_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LHipYaw_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LHip">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LThigh">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LTibia">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="LAnklePitch_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="l_ankle">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>0.1</maxVel>
+    <minDepth>0.003</minDepth>
+  </gazebo>
+  <gazebo reference="RHipYaw_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RHip">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RThigh">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RTibia">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RAnklePitch_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="r_ankle">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>false</turnGravityOff>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>0.1</maxVel>
+    <minDepth>0.003</minDepth>
+  </gazebo>
+  <gazebo reference="RFinger11_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RFinger12_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RFinger13_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RFinger21_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RFinger22_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RFinger23_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RFinger31_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RFinger32_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RFinger33_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RThumb1_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="RThumb2_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <selfCollide>false</selfCollide>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <!--
+
+        RGB CAMERAS: Working
+-->
+  <gazebo reference="CameraRightEye_frame">
+    <sensor name="CameraRightEye" type="camera">
+      <update_rate>5.0</update_rate>
+      <camera name="camera/right">
+        <horizontal_fov>1.06290551</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.3</near>
+          <far>500</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+      <plugin filename="libgazebo_ros_camera.so" name="camera_controller">
+        <robotNamespace>romeo_robot</robotNamespace>
+        <alwaysOn>true</alwaysOn>
+        <updateRate>5.0</updateRate>
+        <cameraName>camera_right</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>CameraRightEye_optical_frame</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>-0.0545211</distortionK1>
+        <distortionK2>0.06919734</distortionK2>
+        <distortionK3>-0.0241095</distortionK3>
+        <distortionT1>-0.0112245</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+    </sensor>
+  </gazebo>
+  <gazebo reference="CameraLeftEye_frame">
+    <sensor name="CameraLeftEye" type="camera">
+      <update_rate>5.0</update_rate>
+      <camera name="camera/left">
+        <horizontal_fov>1.06290551</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.05</near>
+          <far>500</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+      <plugin filename="libgazebo_ros_camera.so" name="camera_controller">
+        <robotNamespace>/romeo_robot</robotNamespace>
+        <alwaysOn>true</alwaysOn>
+        <updateRate>5.0</updateRate>
+        <cameraName>camera_left</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>CameraLeftEye_optical_frame</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>-0.0648764</distortionK1>
+        <distortionK2>0.06125202</distortionK2>
+        <distortionK3>0.00382815</distortionK3>
+        <distortionT1>-0.00551104</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- HEAD -->
+  <transmission name="NeckYaw_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="NeckYaw">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="NeckYaw_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>145.2</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="NeckPitch_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="NeckPitch">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="NeckPitch_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>118.1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="HeadPitch_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="HeadPitch">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="HeadPitch_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>130.8</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="HeadRoll_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="HeadRoll">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="HeadRoll_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>201.3</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <!-- ARMS -->
+  <!-- XACRO -->
+  <transmission name="LShoulderPitch_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LShoulderPitch">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LShoulderPitch_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>249.7</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="LShoulderYaw_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LShoulderYaw">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LShoulderYaw_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>118.1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="LElbowRoll_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LElbowRoll">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LElbowRoll_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>145.2</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="LElbowYaw_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LElbowYaw">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LElbowYaw_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>118.1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="LWristRoll_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LWristRoll">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LWristRoll_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>201.3</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="LWristYaw_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LWristYaw">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LWristYaw_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>249.9</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="LWristPitch_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LWristPitch">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LWristPitch_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>173.2</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="LHand_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LHand">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LHand_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>13.03</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="RShoulderPitch_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RShoulderPitch">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RShoulderPitch_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>249.7</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="RShoulderYaw_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RShoulderYaw">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RShoulderYaw_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>118.1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="RElbowRoll_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RElbowRoll">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RElbowRoll_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>145.2</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="RElbowYaw_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RElbowYaw">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RElbowYaw_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>118.1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="RWristRoll_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RWristRoll">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RWristRoll_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>201.3</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="RWristYaw_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RWristYaw">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RWristYaw_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>249.9</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="RWristPitch_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RWristPitch">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RWristPitch_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>173.2</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="RHand_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RHand">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RHand_Motor">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>13.03</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="TrunkYaw_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="TrunkYaw">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="TrunkYaw_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>292.47</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <!-- LEGS -->
+  <transmission name="LHipYaw_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LHipYaw">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LHipYaw_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>2696.58</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="LHipRoll_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LHipRoll">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LHipRoll_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>160.448</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="LHipPitch_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LHipPitch">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LHipPitch_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>243.736</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="LKneePitch_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LKneePitch">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LKneePitch_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>100.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="LAnklePitch_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LAnklePitch">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LAnklePitch_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>247.338</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="LAnkleRoll_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="LAnkleRoll">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="LAnkleRoll_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>168.65</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="RHipYaw_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RHipYaw">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RHipYaw_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>2696.58</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="RHipRoll_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RHipRoll">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RHipRoll_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>160.448</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="RHipPitch_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RHipPitch">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RHipPitch_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>243.736</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="RKneePitch_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RKneePitch">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RKneePitch_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>100.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="RAnklePitch_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RAnklePitch">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RAnklePitch_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>247.338</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="RAnkleRoll_Transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="RAnkleRoll">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="RAnkleRoll_Motor">
+      <!-- Dummy Values -->
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>168.65</mechanicalReduction>
+    </actuator>
+  </transmission>
 </robot>
