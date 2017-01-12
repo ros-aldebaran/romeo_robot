@@ -2,12 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(romeo_description)
 
 # We need to find catkin for the rest of the script to work
-find_package(catkin REQUIRED COMPONENTS
-  roscpp
-  tf
-  message_filters
-  sensor_msgs
-)
+find_package(catkin REQUIRED)
 
 # Nothing that can be imported by other modules
 catkin_package()
