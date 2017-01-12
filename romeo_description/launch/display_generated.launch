@@ -1,4 +1,4 @@
-<!-- roslaunch file to start view an URDF model in rviz.
+<!-- roslaunch file to view an URDF model in rviz.
       Adapted from urdf_tutorial/display.launch -->
 <launch>
 	<arg name="model" />
