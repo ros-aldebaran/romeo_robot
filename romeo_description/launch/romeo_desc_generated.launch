@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
   <!-- Load Nao Robot parameter file -->
-  <param name="robot_description" command="$(find xacro)/xacro.py $(find romeo_description)/urdf/romeo_generated_urdf/romeo_robot.xacro" />
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(find romeo_description)/urdf/romeo_generated_urdf/romeo_robot.xacro" />
   <node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher" />
 </launch>
