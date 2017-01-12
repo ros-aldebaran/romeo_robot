@@ -19,6 +19,7 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <run_depend>naoqi_driver</run_depend>
+  <run_depend>naoqi_pose</run_depend>
   <run_depend>romeo_description</run_depend>
   <run_depend>romeo_sensors_py</run_depend>
 
