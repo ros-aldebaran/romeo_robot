@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>romeo_sensors_py</name>
-  <version>0.1.4</version>
+  <version>0.1.5</version>
   <description>Package that adds the depth camera to Romeo</description>
 
   <maintainer email="natalia.lyubova@gmail.com">Natalia Lyubova</maintainer>

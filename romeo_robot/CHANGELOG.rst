@@ -2,8 +2,8 @@
 Changelog for package romeo_robot
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.5 (2017-01-20)
+------------------
 * update maintainers
 * Contributors: Mikael Arguedas
 
