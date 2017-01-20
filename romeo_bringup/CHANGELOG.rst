@@ -2,6 +2,11 @@
 Changelog for package romeo_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update maintainers
+* Contributors: Mikael Arguedas
+
 0.1.4 (2016-05-20)
 ------------------
 * fixed packages.xml

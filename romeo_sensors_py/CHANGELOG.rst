@@ -2,6 +2,12 @@
 Changelog for package romeo_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update maintainers
+* make Natalia a maintainer
+* Contributors: Mikael Arguedas, Vincent Rabaud
+
 0.1.4 (2016-05-20)
 ------------------
 

@@ -2,6 +2,18 @@
 Changelog for package romeo_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update maintainers
+* reuse existing launchfile
+* fix deprecated xacro call
+* Fix maintainer's name
+  follow up of a99e3f53fa7dcedf1a3786dfceefa513a7aba4b8 for consistency
+* updating romeo.urdf after regenerating it from updated xacro files
+* adding config for Gazebo: Gazebo xacro files and full list of controllers
+* updating URDF for eyes including inertia matrices and orientation
+* Contributors: Mikael Arguedas, Natalia Lyubova, nlyubova
+
 0.1.4 (2016-05-20)
 ------------------
 * fixed packages.xml
