@@ -1793,7 +1793,13 @@
   <joint name="CameraDepth_joint" type="fixed">
     <parent link="HeadRoll_link"/>
     <child link="CameraDepth_frame"/>
-    <origin rpy="2.0043951 0 1.57079632679" xyz="0.1403 -0.04708 0.14655"/>
+    <origin rpy="0 0 0" xyz="0.1403 -0.04708 0.14655"/>
+  </joint>
+  <link name="CameraDepth_optical_frame"/>
+  <joint name="CameraDepth_optical_frame_fixedjoint" type="fixed">
+    <parent link="CameraDepth_frame"/>
+    <child link="CameraDepth_optical_frame"/>
+    <origin rpy="2.0043951 0 1.57079632679" xyz="0 0 0"/>
   </joint>
   <link name="Cap">
     <inertial>
@@ -2445,7 +2451,36 @@
       </plugin>
     </sensor>
   </gazebo>
-
+  <gazebo reference="CameraDepth_frame">
+    <sensor name="CameraDepth_frame_sensor" type="depth">
+      <always_on>true</always_on>
+      <update_rate>20.0</update_rate>
+      <camera>
+        <horizontal_fov>1.01229096616</horizontal_fov>
+        <image>
+          <format>B8G8R8</format>
+          <width>320</width>
+          <height>240</height>
+        </image>
+        <clip>
+          <near>0.4</near>
+          <far>8.0</far>
+        </clip>
+      </camera>
+      <plugin filename="libgazebo_ros_openni_kinect.so" name="CameraDepth_frame_controller">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>20.0</updateRate>
+        <cameraName>romeo_robot/camera</cameraName>
+        <imageTopicName>ir/image_raw</imageTopicName>
+        <cameraInfoTopicName>depth/camera_info</cameraInfoTopicName>
+        <depthImageTopicName>depth/image_raw</depthImageTopicName>
+        <pointCloudTopicName>depth/points</pointCloudTopicName>
+        <frameName>CameraDepth_optical_frame</frameName>
+        <pointCloudCutoff>0.4</pointCloudCutoff>
+        <pointCloudCutoffMax>8.0</pointCloudCutoffMax>
+      </plugin>
+    </sensor>
+  </gazebo>
   <!-- HEAD -->
   <transmission name="NeckYaw_Transmission">
     <type>transmission_interface/SimpleTransmission</type>
