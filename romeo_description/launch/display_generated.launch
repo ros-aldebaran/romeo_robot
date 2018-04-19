@@ -4,7 +4,7 @@
 	<arg name="model" />
 	<arg name="gui" default="True" />
 
-  <include file="$(find romeo_description)/launch/romeo_desc_generated.launch">
+  <include file="$(find romeo_description)/launch/romeo_desc_generated.launch"/>
 	<param name="use_gui" value="$(arg gui)"/>
 	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" ></node>
 	<node name="rviz" pkg="rviz" type="rviz" args="-f torso -d $(find romeo_description)/config/urdf.rviz" />
